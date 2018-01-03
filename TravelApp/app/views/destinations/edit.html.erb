@@ -1,0 +1,24 @@
+<div class="header">
+  <div class="container">
+    <img src="http://s3.amazonaws.com/codecademy-content/courses/learn-rails/img/logo-1tm.svg" width="80">
+    <h1>BokenjiKan</h1>
+  </div>
+</div>
+
+<div class="destination">
+  <div class="container">
+    <%= image_tag(@destination.image, :alt => "alternative text") %>
+    <!-- Your code here -->
+    <%= form_for(@destination) do |f| %>
+      <div class="field">
+        <%= f.label "Edit your description here" %><br>
+        <%= f.text_area :description %>
+      </div>
+      <div class="actions">
+        <%= f.submit "Update" %>
+      </div>
+    <% end %>
+
+  </div>
+</div>
+

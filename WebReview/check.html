@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0">
+        <title>Phongtot.vn - Trang web thuê và cho thuê phòng chính chủ.</title>
+        <meta name="keywords" content="Cho thue phong tro, Tim nha tro, Thue phong tro, Tim phong tro, Thue nha nguyen can, Cho thue nha nguyen can, Thue phong tro">
+        <meta name="description" content="Trang web thuê và cho thuê phòng chính chủ nhằm giúp người thuê phòng và người cho thuê phòng tương tác với nhau không qua trung gian môi giới.">
+        <meta name="author" content="Static team">
+        <link rel="shortcut icon" href="http://phongtot.vn/favicon.ico">
+        <link rel="image_src" type="image/png" href="http://phongtot.vn/themes/client/img/phongtot_logo.png"/>
+        <link rel="canonical" href="http://phongtot.vn" />
+        <link rel="shortlink" href="http://phongtot.vn" />
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <link rel="stylesheet" href="fonts.css">
+        <link rel="stylesheet" href="component.css">
+        <link rel="stylesheet" href="app.css">
+        <link rel="stylesheet" href="http://phongtot.vn/themes/client/css/jquery-gmaps-latlon-picker.css">
+        <script src="http://phongtot.vn/themes/client/js/jquery-1.11.3.min.js"></script>
+        <script src="http://phongtot.vn/themes/client/js/bootstrap.min.js"></script>
+        <script src="http://phongtot.vn/themes/client/js/multiple-select.js"></script>
+        <script src="http://phongtot.vn/themes/client/js/owl.carousel.min.js"></script>
+        <script src="http://phongtot.vn/themes/client/js/ion.rangeSlider.js"></script>
+        <script src="http://phongtot.vn/themes/client/js/jquery.maskMoney.js"></script>
+        <!-- Load WysiBB JS and Theme -->
+        <script src="http://phongtot.vn/themes/client/js/wysibb/jquery.wysibb.min.js"></script>
+        <link rel="stylesheet" href="http://phongtot.vn/themes/client/js/wysibb/theme/default/wbbtheme.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header id="header" class="header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="pull-left">
+                        <a href="static/home">
+                            <img class="img-responsive" src="http://phongtot.vn/themes/client/img/phongtot_logo.png">
+                        </a>
+                    </div>
+                    <div class="pull-right">
+                        <div class="header-top-avatar">
+                            <img class="img-responsive" src="http://phongtot.vn/themes/client/img/avatar.png">
+                        </div>
+                        <div class="header-top-user">
+                            <div class="user-login">
+                                <a class="load_modal_login" data-toggle="modal" href="#tab_auth_login" data-target="#modal_auth">Đăng nhập</a>
+                            </div>
+                            <div class="user-register load_modal_register">
+                                <a data-toggle="modal" data-target="#modal_auth">Tạo tài khoản</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pull-right">
+                        <a class="btn btn-submit-room load_modal_login" data-toggle="modal" data-target="#modal_auth">Đăng tin miễn phí</a>
+                    </div>
+                    <div id="modal_auth" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="row-fluid">
+                                    <div class="col-md-12">
+                                        <div class="modal_auth_wrap">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <ul class="nav nav-tabs no-margin">
+                                                <li id="li_login" class="active"><a href="#tab_auth_login" data-toggle="tab">ĐĂNG NHẬP</a></li>
+                                                 <li id="li_register"><a href="#tab_auth_register" data-toggle="tab">ĐĂNG KÝ</a></li>
+                                            </ul>
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade in active" id="tab_auth_login">
+                                                    <form method="POST" action="#">
+                                                        <div class="form-group">
+                                                            <label for="email" class="col-sm-3 col-md-3 control-label">Email</label>
+                                                            <div class="col-sm-8 col-md-8">
+                                                                <input type="email" name="email" class="form-control" id="email" placeholder="email..." value="">
+                                                                <span class="help-block"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="password" class="col-sm-3 col-md-3 control-label">Password</label>
+                                                            <div class="col-sm-8 col-md-8">
+                                                                <input type="password" name="password" class="form-control" id="password" placeholder="password..." value="">
+                                                                <span class="help-block"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="col-sm-3 col-md-3 control-label"></label>
+                                                            <div class="col-sm-8 col-md-8">
+                                                            <div class="pull-left help-block">
+                                                                <input type="checkbox" name="remember"> Ghi nhớ đăng nhập
+                                                            </div>
+                                                            <div class="pull-right">
+                                                            <button type="submit" class="btn btn-auth-submit">Đăng nhập</button>
+                                                            </div>
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                            <hr>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-12 text-center">
+                                                                <a href="#" class="btn btn-md btn-social btn-facebook"> <i class="fa fa-facebook"></i> Đăng nhập bằng Facebook </a>
+                                                                <a href="#" class="btn btn-md btn-social btn-google-plus"> <i class="fa fa-google-plus"></i> Đăng nhập bằng Google </a>
+                                                            </div>
+                                                        </div>
+                                                        <hr>
+                                    <div class="row">
+                                        <div class="text-center text-center-auth">
+                                            <p><a class="btn btn-link" href="#">Khôi phục mật khẩu</a></p>
+                                        </div>
+                                    </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                         </div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div> <!-- importtant -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+</html>

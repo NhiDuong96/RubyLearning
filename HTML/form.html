@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+    <form action="url" method="post">
+        <fieldset>
+        <legend>Information</legend>
+        First Name:<br>
+        <input type="text" name="firstname"><br>
+        Last Name:<br>
+        <input type="text" name="lastname"><br>
+        Password:<br>
+        <input type="password" name="password"><br>
+        <input type="submit" value="Create">
+        </fieldset>
+    </form>
+    <select>
+        <option value="one" selected>One</option>
+        <option value="two">Two</option>
+    </select><br>
+    <textarea name="message" rows="10" cols="30">
+        here is textarea
+    </textarea><br>
+    <hr>
+    <button type="button" onclick="alert('minh nhi')">Click Me!</button>
+    <hr>
+    <h2>Attributes</h2>
+    <form action="/action_page.php">
+        Select images: <input type="file" name="img" multiple><br>
+        <input type="image" src="index.png" alt="Submit" width="50" height="50">
+    </form>
+</body>
+</html>

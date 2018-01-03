@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blocks</title>
+    <style>
+        .class{
+            background-color: tomato;
+            font-size: 150%;
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        function func() {
+            // body...
+            var x = document.getElementsByClassName("city");
+            for (var i = 0; i < x.length 0; i++) {
+                x[i].style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>My <span style="color: red">Important</span> <span style="color: blue">Heading</span></h1>
+    <div>Hello</div>
+    <div>World</div>
+    <div style="background-color:black;color:white;padding:20px;">
+        <h2 class="class">London</h2>
+        <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    </div>
+<button onclick="func()">Hide elements</button>
+
+<h2 class="city">London</h2>
+<p>London is the capital of England.</p>
+
+<h2 class="city">Paris</h2>
+<p>Paris is the capital of France.</p>
+</body>
+</html>

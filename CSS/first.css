@@ -1,0 +1,17 @@
+#myId{
+text-align: center;
+color: red;
+}
+.myClass{
+    text-align: right;
+    color: blue;
+}
+.large{
+    font-size: 200%;
+}
+.border{
+border: 2px solid Tomato;
+}
+div{
+background-color: #ff00ff
+}

@@ -1,0 +1,22 @@
+<div class="header">
+  <div class="container">
+    <img src="http://s3.amazonaws.com/codecademy-content/courses/learn-rails/img/logo-1tm.svg" width="80">
+    <h1>BokenjiKan</h1>
+  </div>
+</div>
+
+<div class="tags">
+  <div class="container">
+    <div class="cards row">
+        <div class="card col-xs-4">
+            <% @tags.each do |f| %>
+                <h2><%=f.title%></h2>
+                <!--<img src=<%=f.image%> alt="non image">-->
+                <%= image_tag(f.image, :alt => "alternative text") %>
+                 <%= link_to "Learn more", tag_path(f) %>
+            <% end %>
+        </div>
+    </div>
+  </div>
+</div>
+

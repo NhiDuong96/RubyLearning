@@ -1,0 +1,2511 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0">
+        <title>Phongtot.vn - Trang web thu&ecirc; v&agrave; cho thu&ecirc; ph&ograve;ng ch&iacute;nh chủ.</title>
+        <meta name="keywords" content="Cho thue phong tro, Tim nha tro, Thue phong tro, Tim phong tro, Thue nha nguyen can, Cho thue nha nguyen can, Thue phong tro">
+        <meta name="description" content="Trang web thuê và cho thuê phòng chính chủ nhằm giúp người thuê phòng và người cho thuê phòng tương tác với nhau không qua trung gian môi giới.">
+        <meta name="author" content="Static team">
+        <meta name="csrf_token" content="yeXcvpnornkHbghDE6dzTLUcLb7IDIDwhinm4rFV">
+        <meta name="robots" content="index,follow" />
+        <meta content="index, follow" name="googlebot">
+        <meta property="og:title" content="Phongtot.vn - Trang web thu&ecirc; v&agrave; cho thu&ecirc; ph&ograve;ng ch&iacute;nh chủ." />
+        <meta property="og:description" content="Trang web thuê và cho thuê phòng chính chủ nhằm giúp người thuê phòng và người cho thuê phòng tương tác với nhau không qua trung gian môi giới." />
+        <meta property="og:image" content="http://phongtot.vn/themes/client/img/phongtot_logo.png" />
+        <meta property="og:url" content="http://phongtot.vn" />
+        <meta property="og:type" content="news" />
+        <meta property="og:site_name" content="Phongtot.vn - Trang web thu&ecirc; v&agrave; cho thu&ecirc; ph&ograve;ng ch&iacute;nh chủ." />
+        <meta property="fb:app_id" content="1611605889086139" />
+        <link rel="shortcut icon" href="http://phongtot.vn/favicon.ico">
+        <link rel="image_src" type="image/png" href="http://phongtot.vn/themes/client/img/phongtot_logo.png"/>
+        <link rel="canonical" href="http://phongtot.vn" />
+        <link rel="shortlink" href="http://phongtot.vn" />
+        <link rel="stylesheet" href="http://phongtot.vn/themes/client/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://phongtot.vn/themes/client/css/fonts.css">
+        <link rel="stylesheet" href="http://phongtot.vn/themes/client/css/font-awesome.min.css">
+        <link rel="stylesheet" href="http://phongtot.vn/themes/client/css/component.css">
+        <link rel="stylesheet" href="http://phongtot.vn/themes/client/css/app.css">
+        <link rel="stylesheet" href="http://phongtot.vn/themes/client/css/jquery-gmaps-latlon-picker.css">
+        <script src="http://phongtot.vn/themes/client/js/jquery-1.11.3.min.js"></script>
+        <script src="http://phongtot.vn/themes/client/js/bootstrap.min.js"></script>
+        <script src="http://phongtot.vn/themes/client/js/multiple-select.js"></script>
+        <script src="http://phongtot.vn/themes/client/js/owl.carousel.min.js"></script>
+        <script src="http://phongtot.vn/themes/client/js/ion.rangeSlider.js"></script>
+        <script src="http://phongtot.vn/themes/client/js/jquery.maskMoney.js"></script>
+        <!-- Load WysiBB JS and Theme -->
+        <script src="http://phongtot.vn/themes/client/js/wysibb/jquery.wysibb.min.js"></script>
+        <link rel="stylesheet" href="http://phongtot.vn/themes/client/js/wysibb/theme/default/wbbtheme.css" />
+    </head>
+    <body>
+        <header id="header" class="header-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="pull-left">
+                    <a class="logo" href="http://phongtot.vn"><img class="img-responsive" src="http://phongtot.vn/themes/client/img/phongtot_logo.png"></a>
+                </div>
+                <div class="pull-right">
+                                    <div class="header-top-avatar"><img class="img-responsive" src="http://phongtot.vn/themes/client/img/avatar.png"></div>
+                    <div class="header-top-user">
+                        <div class="user-login"><a class="load_modal_login" href="#tab_auth_login" data-toggle="modal" data-target="#modal_auth">Đăng nhập</a></div>
+                                                <div class="user-register load_modal_register"><a href="javascript: void(0);" data-toggle="modal" data-target="#modal_auth">Tạo tài khoản</a></div>
+                                            </div>
+                                </div>
+                <div class="pull-right">
+                                    <a class="btn btn-submit-room load_modal_login" data-toggle="modal" data-target="#modal_auth" href="javascript: void(0);">Đăng tin miễn phí</a>
+                                </div>
+                <div class="modal fade" id="modal_auth" tabindex="-1" role="dialog" aria-labelledby="login_modal_label" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="row-fluid">
+                <div class="col-md-12">
+                    <div class="modal_auth_wrap">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <ul class="nav nav-tabs no-margin">
+                            <li id="li_login" class="active"><a href="#tab_auth_login" data-toggle="tab">ĐĂNG NHẬP</a></li>
+                            <li id="li_register"><a href="#tab_auth_register" data-toggle="tab">ĐĂNG KÝ</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane fade in active" id="tab_auth_login">
+                                <form class="form-horizontal frm-login-ajax1 frm-user-ajax" id="frm-login-ajax1" role="form" method="POST" action="http://phongtot.vn/dang-nhap">
+                                    <div class="hide alert alert-danger"></div>
+                                    <input type="hidden" name="_token" value="yeXcvpnornkHbghDE6dzTLUcLb7IDIDwhinm4rFV">
+                                    <input type="hidden" name="current_url" value="http://phongtot.vn">
+                                    <div class="form-group">
+                                        <label for="email" class="col-sm-3 col-md-3 control-label">Email</label>
+                                        <div class="col-sm-8 col-md-8">
+                                            <input type="email" class="form-control" name="email" id="email" placeholder="Địa chỉ email ..." value="">
+                                            <span class="help-block"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password" class="col-sm-3 col-md-3 control-label">Mật khẩu</label>
+                                        <div class="col-sm-8 col-md-8">
+                                            <input type="password" name="password" class="form-control" id="password" placeholder="Mật khẩu ...">
+                                            <span class="help-block"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-3 col-md-3 control-label"></label>
+                                        <div class="col-sm-8 col-md-8">
+                                            <div class="pull-left help-block"><input type="checkbox" name="remember"> Ghi nhớ đăng nhập</div>
+                                            <div class="pull-right"><button type="submit" class="btn btn-auth-submit">Đăng nhập</button></div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-md-12 text-center">
+                                            <a href="http://phongtot.vn/social/facebook" class="btn btn-md btn-social btn-facebook"> <i class="fa fa-facebook"></i> Đăng nhập bằng Facebook </a>
+                                            <a href="http://phongtot.vn/social/google" class="btn btn-md btn-social btn-google-plus"> <i class="fa fa-google-plus"></i> Đăng nhập bằng Google </a>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="text-center text-center-auth">
+                                            <p><a class="btn btn-link" href="http://phongtot.vn/password/email">Khôi phục mật khẩu</a> để tìm lại mật khẩu</p>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                                                        <div class="tab-pane fade" id="tab_auth_register">
+                                <form class="form-horizontal frm-user-ajax" id="frm-register-ajax" role="form" method="POST" action="http://phongtot.vn/dang-ky">
+                                    <div class="hide alert alert-danger"></div>
+                                    <input type="hidden" name="_token" value="yeXcvpnornkHbghDE6dzTLUcLb7IDIDwhinm4rFV">
+                                    <input type="hidden" name="current_url" value="http://phongtot.vn">
+                                    <div class="form-group">
+                                        <label for="txt_fullname" class="col-sm-4 control-label">Tên hiển thị</label>
+                                        <div class="col-sm-6">
+                                            <input type="text" name="name" class="form-control" id="name" placeholder="Tên hiển thị ..." value="">
+                                            <span class="help-block"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txt_email" class="col-sm-4 control-label">Email</label>
+                                        <div class="col-sm-6">
+                                            <input type="email" name="email" class="form-control" id="email" placeholder="Email ..." value="">
+                                            <span class="help-block"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txt_password" class="col-sm-4 control-label">Mật khẩu</label>
+                                        <div class="col-sm-6">
+                                            <input type="password" name="password" class="form-control" id="password" placeholder="Mật khẩu ...">
+                                            <span class="help-block"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txt_password2" class="col-sm-4 control-label">Xác nhận mật khẩu</label>
+                                        <div class="col-sm-6">
+                                            <input type="password" name="repassword" class="form-control" id="password_confirmation" placeholder="Xác nhận mật khẩu ...">
+                                            <span class="help-block"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txt_confirm" class="col-sm-4 control-label">Xác nhận</label>
+                                        <div class="col-sm-6">
+                                            <input type="text" name="captcha" class="form-control" id="captcha" placeholder="Mã xác nhận ..." value="">
+                                            <span class="help-block"></span>
+                                            <span class="help-block"><small>Gồm 5 ký tự phân biệt chữ Hoa và chữ thường. </small></span>
+                                            <div class="col-md-12">
+                                                <img src="http://phongtot.vn/captcha/default?tHAR1xuE" alt="captcha" class="captcha-img" data-refresh-config="default">
+                                                <span class="pull-right"><a title="Lấy mã xác nhận mới" class="recapcha enable-tooltip" href="javascript:void(0);"><i class="fa fa-refresh fa-2x text-success"></i></a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <script type="text/javascript">
+                                    $('.recapcha').on('click', function () {
+                                        var captcha = $('img.captcha-img');
+                                        var config = captcha.data('refresh-config');
+                                        $.ajax({
+                                            method: 'GET',
+                                            url: '/get_captcha/' + config,
+                                        }).done(function (response) {
+                                            captcha.prop('src', response);
+                                        });
+                                    });
+                                    </script>
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-4 col-sm-8">
+                                            <button type="submit" class="btn btn-auth-submit">Đăng ký tài khoản</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <hr>
+                                <div class="text-center">
+                                    <a href="http://phongtot.vn/social/facebook" class="btn btn-md btn-social btn-facebook"> <i class="fa fa-facebook"></i> Đăng ký bằng Facebook </a>
+                                    <a href="http://phongtot.vn/social/facebook" class="btn btn-md btn-social btn-google-plus"> <i class="fa fa-google-plus"></i> Đăng ký bằng Google </a>
+                                </div>
+                            </div>
+                                                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>                <script type="text/javascript">
+                    $('body').on('click', '.load_modal_login', function(e){
+                        $('#li_register').removeClass('active');
+                        $('#li_login').addClass('active');
+                        $('#tab_auth_register').removeClass('in active');
+                        $('#tab_auth_login').addClass('in active');
+                    });
+                    $('body').on('click', '.load_modal_register', function(e){
+                        $('#li_login').removeClass('active');
+                        $('#li_register').addClass('active');
+                        $('#tab_auth_login').removeClass('in active');
+                        $('#tab_auth_register').addClass('in active');
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+</header>        <!-- End header top -->
+        <div class="clearfix"></div>
+        <div id="header_nav" class="header-nav">
+    <nav class="navbar">
+        <div class="container">
+            <div class="row block-navbar">
+                <div class="col-md-12">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="http://phongtot.vn"><span class="fa fa-home"></span></a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                                                        <li><a href="http://phongtot.vn/phong-tro-nha-tro">Ph&ograve;ng trọ</a></li>
+                                                        <li><a href="http://phongtot.vn/nha-nguyen-can">Nh&agrave; nguy&ecirc;n căn</a></li>
+                                                        <li><a href="http://phongtot.vn/nha-mat-pho">Nh&agrave; mặt phố</a></li>
+                                                        <li><a href="http://phongtot.vn/van-phong">Văn ph&ograve;ng</a></li>
+                                                        <li><a href="http://phongtot.vn/chung-cu-can-ho">Chung cư, Căn hộ</a></li>
+                                                        <li><a href="http://phongtot.vn/mat-bang-cua-hang">Mặt bằng</a></li>
+                                                        <li><a href="http://phongtot.vn/o-ghep">Ở gh&eacute;p</a></li>
+                                                        <li><a href="http://phongtot.vn/bai-viet">B&agrave;i viết</a></li>
+                                                        <li><a href="http://hoclaptrinh.vn" target="_blank" title="Học Lập Trình">Học Lập Trình</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </nav>
+</div>        <div class="clearfix"></div>
+        <!-- End menu -->
+        <script>
+$(document).ready(function () {
+    $(".btn-select").each(function (e) {
+        var value = $(this).find("ul li.selected").html();
+        if (value != undefined) {
+            $(this).find(".btn-select-input").val(value);
+            $(this).find(".btn-select-value").html(value);
+        }
+    });
+});
+
+$(document).on('click', '.btn-select', function (e) {
+    e.preventDefault();
+    var ul = $(this).find("ul");
+    if ($(this).hasClass("active")) {
+        if (ul.find("li").is(e.target)) {
+            var target = $(e.target);
+            target.addClass("selected").siblings().removeClass("selected");
+            var value = target.val();
+            var html = target.html();
+            $(this).find(".btn-select-input").val(value);
+            $(this).find(".btn-select-value").html(html);
+        }
+        ul.hide();
+        $(this).removeClass("active");
+    }
+    else {
+        $('.btn-select').not(this).each(function () {
+            $(this).removeClass("active").find("ul").hide();
+        });
+        ul.slideDown(300);
+        $(this).addClass("active");
+    }
+});
+
+$(document).on('click', function (e) {
+    var target = $(e.target).closest(".btn-select");
+    if (!target.length) {
+        $(".btn-select").removeClass("active").find("ul").hide();
+    }
+});
+</script>                <div class="slider hidden-xs hidden-sm">
+    <img class="img-responsive" src="http://phongtot.vn/themes/client/img/slider-bg.png" alt="">
+    <div class="pt_container">
+        <div class="slider-title">
+            <h1>Chính chủ, Miễn phí, Tiện lợi</h1>
+        </div>
+        <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 search-bar">
+            <form class="form" action="http://phongtot.vn/tim-kiem" method="GET">
+                <div class="group-arena pull-left">
+                    <div class="group-title">Chọn khu vực</div>
+                    <input class="ip-room-where" type="text" name="k" placeholder="Bạn muốn tìm phòng ở đâu ?">
+                    <a class="btn btn-select btn-select-light btn-select-city">
+                        <input type="hidden" class="btn-select-input" id="province" name="province" value="" />
+                        <span class="btn-select-value">Thành Phố</span>
+                        <span class='btn-select-arrow fa fa-angle-down'></span>
+                        <ul>
+                                                    <li class="province" value="1">H&agrave; Nội</li>
+                                                    <li class="province" value="31">Hải Ph&ograve;ng</li>
+                                                    <li class="province" value="48">Đ&agrave; Nẵng</li>
+                                                    <li class="province" value="79">Hồ Ch&iacute; Minh</li>
+                                                    <li class="province" value="92">Cần Thơ</li>
+                                                </ul>
+                    </a>
+                    <a class="btn btn-select btn-select-light btn-select-city">
+                        <input type="hidden" class="btn-select-input" name="district" value="" />
+                        <span class="btn-select-value">Quận</span>
+                        <span class='btn-select-arrow fa fa-angle-down'></span>
+                        <ul id="district">
+                        </ul>
+                    </a>
+                    <script>
+                        $('body').on('click', '.province', function(e){
+                            var key = $(this).val();
+                            var table = 'district';
+                            $.ajax({
+                                url: 'http://phongtot.vn/data_client',
+                                type: 'POST',
+                                data: {key: key,table: table, _token: 'yeXcvpnornkHbghDE6dzTLUcLb7IDIDwhinm4rFV' },
+                                dataType: 'json',
+                                success: function(result){
+                                    var html = '';
+                                    $.each (result, function (key, item){
+                                        var value = item['id'];
+                                        var name = item['name'];
+                                        html += '<li value="'+value+'">'+name+'</li>';
+                                    });
+                                    $('#district').html(html);
+                                    $("select").multipleSelect({
+                                        width: 265,
+                                        multiple: true,
+                                        multipleWidth: 132,
+                                        selectAll: false,
+                                        placeholder: "Chọn Quận Huyện",
+                                        // position: 'top',
+                                        maxHeight: 400
+                                    });
+                                }
+                            });
+                        });
+                        $("select").multipleSelect({
+                            width: 265,
+                            multiple: true,
+                            multipleWidth: 132,
+                            selectAll: false,
+                            placeholder: "Chọn Quận Huyện",
+                            // position: 'top',
+                            maxHeight: 400
+                        });
+                    </script>
+                </div>
+
+                <div class="group-type pull-left">
+                    <div class="group-title">Chọn loại phòng</div>
+                    <div class="radio radio-danger">
+                        <ul class="type-list-item">
+                                                    <li>
+                                <input type="radio" name="type[]" id="1" value="1">
+                                <label for="1">Ph&ograve;ng trọ, nh&agrave; trọ</label>
+                            </li>
+                                                    <li>
+                                <input type="radio" name="type[]" id="2" value="2">
+                                <label for="2">Nh&agrave; nguy&ecirc;n căn</label>
+                            </li>
+                                                    <li>
+                                <input type="radio" name="type[]" id="3" value="3">
+                                <label for="3">Nh&agrave; mặt phố</label>
+                            </li>
+                                                    <li>
+                                <input type="radio" name="type[]" id="4" value="4">
+                                <label for="4">Văn ph&ograve;ng</label>
+                            </li>
+                                                    <li>
+                                <input type="radio" name="type[]" id="6" value="6">
+                                <label for="6">Chung cư, căn hộ</label>
+                            </li>
+                                                    <li>
+                                <input type="radio" name="type[]" id="7" value="7">
+                                <label for="7">Mặt bằng, cửa h&agrave;ng</label>
+                            </li>
+                                                </ul>
+                    </div>
+                </div>
+                <div class="group-price pull-left">
+                    <div class="group-title">Chọn khoảng giá</div>
+                    <div class="range-slider">
+                        <input type="text" class="js-range-slider" value="" />
+                    </div>
+                    <div class="extra-controls">
+                        <div class="form-group input-price">
+                            <div class="price-from">
+                                <div class="input-group">
+                                    <input type="text" name="price_from" maxlength="4" value="0" class="inp js-from form-control" />
+                                    <span class="input-group-addon">Triệu</span>
+                                </div>
+                            </div>
+                            <span class="input-price-title">Đến</span>
+                            <div class="price-to">
+                                <div class="input-group">
+                                    <input type="text" name="price_to" maxlength="4" value="50" class="inp js-to form-control" />
+                                    <span class="input-group-addon">Triệu</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <script type="text/javascript">
+                        var $range = $(".js-range-slider"),
+                            $from = $(".js-from"),
+                            $to = $(".js-to"),
+                            range,
+                            min = 0,
+                            max = 50,
+                            from,
+                            to;
+
+                        var updateValues = function () {
+                            $from.prop("value", from);
+                            $to.prop("value", to);
+                        };
+
+                        $range.ionRangeSlider({
+                            type: "double",
+                            min: min,
+                            max: max,
+                            step:0.5,
+                            prettify_enabled: false,
+                            from: 0,
+                            to: 50,
+                            grid: false,
+                            hide_min_max: true,
+                            hide_from_to:true,
+                            postfix: ' triệu đ',
+                            prefix: "$",
+                            keyboard: true,
+                            grid_num: 10,
+                            onChange: function (data) {
+                                from = data.from;
+                                to = data.to;
+
+                                updateValues();
+                            }
+                        });
+
+                        range = $range.data("ionRangeSlider");
+
+                        var updateRange = function () {
+                            range.update({
+                                from: from,
+                                to: to
+                            });
+                        };
+
+                        $from.on("change", function () {
+                            from = +$(this).prop("value");
+                            if (from < min) {
+                                from = min;
+                            }
+                            if (from > to) {
+                                from = to;
+                            }
+
+                            updateValues();
+                            updateRange();
+                        });
+
+                        $to.on("change", function () {
+                            to = +$(this).prop("value");
+                            if (to > max) {
+                                to = max;
+                            }
+                            if (to < from) {
+                                to = from;
+                            }
+
+                            updateValues();
+                            updateRange();
+                        });
+                    </script>
+                    <!-- <div class="pt-ip-slide-price">
+                        <input class="ip-room-where ip-room-price-start" type="text" placeholder="Giá Từ">
+                        <input class="ip-room-where ip-room-price-end" type="text" placeholder="Giá Đến">
+                        <i class="fa fa-arrows-h"></i>
+                    </div> -->
+                </div>
+                <div class="clearfix"></div>
+                <div class="group-btn-submit">
+                    <button type="submit" class="btn btn-slide-search"><span class="fa fa-search"></span>Tìm kiếm</button>
+                    <button type="submit" class="btn btn-advance-search">Tìm Nâng Cao</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="slider slider-small hidden-md hidden-lg">
+    <div class="pt_container">
+        <div class="col-xs-12 col-sm-12 search-bar">
+            <form class="form" action="http://phongtot.vn/tim-kiem" method="GET">
+                <div class="group-arena">
+                    <div class="group-title">Chọn khu vực</div>
+                    <input class="ip-room-where" type="text" placeholder="Bạn muốn tìm phòng ở đâu ?">
+                    <a class="btn btn-select btn-select-light btn-select-city">
+                        <input type="hidden" class="btn-select-input" id="province" name="province" value="" />
+                        <span class="btn-select-value">Thành Phố</span>
+                        <span class='btn-select-arrow fa fa-angle-down'></span>
+                        <ul>
+                                                    <li class="province" value="1">H&agrave; Nội</li>
+                                                    <li class="province" value="31">Hải Ph&ograve;ng</li>
+                                                    <li class="province" value="48">Đ&agrave; Nẵng</li>
+                                                    <li class="province" value="79">Hồ Ch&iacute; Minh</li>
+                                                    <li class="province" value="92">Cần Thơ</li>
+                                                </ul>
+                    </a>
+                    <a class="btn btn-select btn-select-light btn-select-city">
+                        <input type="hidden" class="btn-select-input" name="district" value="" />
+                        <span class="btn-select-value">Quận</span>
+                        <span class='btn-select-arrow fa fa-angle-down'></span>
+                        <ul id="district">
+                        </ul>
+                    </a>
+                    <script>
+                        $('body').on('click', '.province', function(e){
+                            var key = $(this).val();
+                            var table = 'district';
+                            $.ajax({
+                                url: 'http://phongtot.vn/data_client',
+                                type: 'POST',
+                                data: {key: key,table: table, _token: 'yeXcvpnornkHbghDE6dzTLUcLb7IDIDwhinm4rFV' },
+                                dataType: 'json',
+                                success: function(result){
+                                    var html = '';
+                                    $.each (result, function (key, item){
+                                        var value = item['id'];
+                                        var name = item['name'];
+                                        html += '<li value="'+value+'">'+name+'</li>';
+                                    });
+                                    $('#district').html(html);
+                                    $("select").multipleSelect({
+                                        width: 265,
+                                        multiple: true,
+                                        multipleWidth: 132,
+                                        selectAll: false,
+                                        placeholder: "Chọn Quận Huyện",
+                                        // position: 'top',
+                                        maxHeight: 400
+                                    });
+                                }
+                            });
+                        });
+                        $("select").multipleSelect({
+                            width: 265,
+                            multiple: true,
+                            multipleWidth: 132,
+                            selectAll: false,
+                            placeholder: "Chọn Quận Huyện",
+                            // position: 'top',
+                            maxHeight: 400
+                        });
+                    </script>
+                </div>
+                <div class="clearfix"></div>
+                <div class="group-type">
+                    <div class="group-title">Chọn loại phòng</div>
+                    <div class="radio radio-danger">
+                        <ul class="type-list-item">
+                                                    <li>
+                                <input type="radio" name="type[]" id="1" value="1">
+                                <label for="1">Ph&ograve;ng trọ, nh&agrave; trọ</label>
+                            </li>
+                                                    <li>
+                                <input type="radio" name="type[]" id="2" value="2">
+                                <label for="2">Nh&agrave; nguy&ecirc;n căn</label>
+                            </li>
+                                                    <li>
+                                <input type="radio" name="type[]" id="3" value="3">
+                                <label for="3">Nh&agrave; mặt phố</label>
+                            </li>
+                                                    <li>
+                                <input type="radio" name="type[]" id="4" value="4">
+                                <label for="4">Văn ph&ograve;ng</label>
+                            </li>
+                                                    <li>
+                                <input type="radio" name="type[]" id="6" value="6">
+                                <label for="6">Chung cư, căn hộ</label>
+                            </li>
+                                                    <li>
+                                <input type="radio" name="type[]" id="7" value="7">
+                                <label for="7">Mặt bằng, cửa h&agrave;ng</label>
+                            </li>
+                                                </ul>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="group-price">
+                    <div class="group-title">Chọn khoảng giá</div>
+                    <div class="range-slider">
+                        <input type="text" class="js-range-slider" value="" />
+                    </div>
+                    <div class="extra-controls">
+                        <div class="form-group input-price">
+                            <div class="price-from">
+                                <div class="input-group">
+                                    <input type="text" name="price_from" maxlength="4" value="0" class="inp js-from form-control" />
+                                    <span class="input-group-addon">Triệu</span>
+                                </div>
+                            </div>
+                            <span class="input-price-title">Đến</span>
+                            <div class="price-to">
+                                <div class="input-group">
+                                    <input type="text" name="price_to" maxlength="4" value="50" class="inp js-to form-control" />
+                                    <span class="input-group-addon">Triệu</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <script type="text/javascript">
+                        var $range = $(".js-range-slider"),
+                            $from = $(".js-from"),
+                            $to = $(".js-to"),
+                            range,
+                            min = 0,
+                            max = 50,
+                            from,
+                            to;
+
+                        var updateValues = function () {
+                            $from.prop("value", from);
+                            $to.prop("value", to);
+                        };
+
+                        $range.ionRangeSlider({
+                            type: "double",
+                            min: min,
+                            max: max,
+                            step:0.5,
+                            prettify_enabled: false,
+                            from: 0,
+                            to: 50,
+                            grid: false,
+                            hide_min_max: true,
+                            hide_from_to:true,
+                            postfix: ' triệu đ',
+                            prefix: "$",
+                            keyboard: true,
+                            grid_num: 10,
+                            onChange: function (data) {
+                                from = data.from;
+                                to = data.to;
+
+                                updateValues();
+                            }
+                        });
+
+                        range = $range.data("ionRangeSlider");
+
+                        var updateRange = function () {
+                            range.update({
+                                from: from,
+                                to: to
+                            });
+                        };
+
+                        $from.on("change", function () {
+                            from = +$(this).prop("value");
+                            if (from < min) {
+                                from = min;
+                            }
+                            if (from > to) {
+                                from = to;
+                            }
+
+                            updateValues();
+                            updateRange();
+                        });
+
+                        $to.on("change", function () {
+                            to = +$(this).prop("value");
+                            if (to > max) {
+                                to = max;
+                            }
+                            if (to < from) {
+                                to = from;
+                            }
+
+                            updateValues();
+                            updateRange();
+                        });
+                    </script>
+                    <!-- <div class="pt-ip-slide-price">
+                        <input class="ip-room-where ip-room-price-start" type="text" placeholder="Giá Từ">
+                        <input class="ip-room-where ip-room-price-end" type="text" placeholder="Giá Đến">
+                        <i class="fa fa-arrows-h"></i>
+                    </div> -->
+                </div>
+                <div class="clearfix"></div>
+                <div class="group-btn-submit">
+                    <button type="submit" class="btn btn-slide-search"><span class="fa fa-search"></span>Tìm kiếm</button>
+                    <button type="submit" class="btn btn-advance-search hidden-xs">Tìm Nâng Cao</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>                <!-- End slider -->
+                <div class="container">
+            <div class="row">
+                            <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-md-12 room-main-content">
+                            <div class="tabbable-panel">
+    <div class="tabbable-line">
+        <div class="menu-tab">
+            <div class="menu-tab-title"><a href=""><span>Tin</span> Mới nhất <i class="fa fa-angle-right"></i></a></div>
+            <div class="menu-tab-title-right">
+                <ul class="nav nav-tabs ">
+                                                            <li class="active">
+                        <a href="#tab_type_1" data-toggle="tab">Tất cả</a>
+                    </li>
+                                        <li class="">
+                        <a href="#tab_type_2" data-toggle="tab">Ph&ograve;ng trọ, nh&agrave; trọ</a>
+                    </li>
+                                        <li class="">
+                        <a href="#tab_type_3" data-toggle="tab">Nh&agrave; nguy&ecirc;n căn</a>
+                    </li>
+                                        <li class="">
+                        <a href="#tab_type_4" data-toggle="tab">Văn ph&ograve;ng</a>
+                    </li>
+                                        <li class="">
+                        <a href="#tab_type_5" data-toggle="tab">Chung cư, căn hộ</a>
+                    </li>
+                                    </ul>
+            </div>
+        </div>
+        <div class="tab-content">
+                                    <div class="tab-pane active" id="tab_type_1">
+                <div class="thumbnail-list">
+                    <div class="row block-item">
+                                                   <div class="col-sm-6 col-md-4 thumbnail-item">
+    <div class="thumbnail">
+        <a href="http://phongtot.vn/chung-cu-can-ho/cho-thue-can-ho-gemek-2-ngu-do-co-ban-gia-5-trieuthang" title="Cho thu&ecirc; căn hộ Gemek 2 ngủ đồ cơ bản gi&aacute; 5 triệu/th&aacute;ng">
+            <img src="http://media.phongtot.vn/xc5tx4cj/cho-thue-can-ho-gemek-2-ngu-do-co-ban-gia-5-trieuthang-thumb-e25mr.jpg" alt="" class="cover img-reponsive">
+        </a>
+        <div class="room-item-price">
+            <a href="">5,000,000 Đ/tháng</a>
+        </div>
+        <div class="caption">
+            <div class="title">
+                <h2><a href="http://phongtot.vn/chung-cu-can-ho/cho-thue-can-ho-gemek-2-ngu-do-co-ban-gia-5-trieuthang">Cho thu&ecirc; căn hộ Gemek 2 ngủ đồ cơ bản gi&aacute; 5 triệu/th&aacute;ng</a></h2>
+            </div>
+            <div class="extra">
+                <div class="pull-left">
+                    <a href="#"><span class="fa fa-map-marker"></span>Ho&agrave;i Đức</a>
+                </div>
+                <div class="pull-right">
+                    <a href=""><span class="fa fa-info"></span>80 m<sup>2</sup></a>
+                </div>
+                <div class="type">
+                    <a href=""><span class="fa fa-home"></span>Chung cư, căn hộ</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="overlay">
+            <a href="#" title="">
+                <img src="img/play.png">
+            </a>
+        </div> -->
+    </div>
+</div>                                                    <div class="col-sm-6 col-md-4 thumbnail-item">
+    <div class="thumbnail">
+        <a href="http://phongtot.vn/chung-cu-can-ho/cho-thue-chung-cu-mini-dt-35-40m2-day-du-tien-nghi-dieu-hoa-nong-lanh-so-213-pho-xa-dan-1511532440to3o8" title="Cho thu&ecirc; chung cư mini DT 35 - 40m2 đầy đủ tiện nghi điều h&ograve;a n&oacute;ng lạnh số 213 phố X&atilde; Đ&agrave;n">
+            <img src="http://media.phongtot.vn/xc5tx4cj/cho-thue-chung-cu-mini-dt-35-40m2-day-du-tien-nghi-dieu-hoa-nong-lanh-so-213-pho-xa-dan-1511532440to3o8-thumb-bq3da.jpg" alt="" class="cover img-reponsive">
+        </a>
+        <div class="room-item-price">
+            <a href="">7,000,000 Đ/tháng</a>
+        </div>
+        <div class="caption">
+            <div class="title">
+                <h2><a href="http://phongtot.vn/chung-cu-can-ho/cho-thue-chung-cu-mini-dt-35-40m2-day-du-tien-nghi-dieu-hoa-nong-lanh-so-213-pho-xa-dan-1511532440to3o8">Cho thu&ecirc; chung cư mini DT 35 - 40m2 đầy đủ tiện nghi điều h&ograve;a n&oacute;ng lạnh số 213 phố X&atilde; Đ&agrave;n</a></h2>
+            </div>
+            <div class="extra">
+                <div class="pull-left">
+                    <a href="#"><span class="fa fa-map-marker"></span>Đống Đa</a>
+                </div>
+                <div class="pull-right">
+                    <a href=""><span class="fa fa-info"></span>50 m<sup>2</sup></a>
+                </div>
+                <div class="type">
+                    <a href=""><span class="fa fa-home"></span>Chung cư, căn hộ</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="overlay">
+            <a href="#" title="">
+                <img src="img/play.png">
+            </a>
+        </div> -->
+    </div>
+</div>                                                    <div class="col-sm-6 col-md-4 thumbnail-item">
+    <div class="thumbnail">
+        <a href="http://phongtot.vn/chung-cu-can-ho/cho-thue-chung-cu-mini-1-phong-ngu-1-pk-dt-40m2-dieu-hoa-san-go-mat-pho-dong-cac-o-cho-dua" title="CHO THU&Ecirc; CHUNG CƯ MINI 1 PH&Ograve;NG NGỦ, 1 PK, DT 40M2 ĐIỀU H&Ograve;A S&Agrave;N GỖ MẶT PHỐ Đ&Ocirc;NG C&Aacute;C, &Ocirc; CHỢ DỪA">
+            <img src="http://media.phongtot.vn/xc5tx4cj/cho-thue-chung-cu-mini-1-phong-ngu-1-pk-dt-40m2-dieu-hoa-san-go-mat-pho-dong-cac-o-cho-dua-thumb-dqcug.jpg" alt="" class="cover img-reponsive">
+        </a>
+        <div class="room-item-price">
+            <a href="">7,000,000 Đ/tháng</a>
+        </div>
+        <div class="caption">
+            <div class="title">
+                <h2><a href="http://phongtot.vn/chung-cu-can-ho/cho-thue-chung-cu-mini-1-phong-ngu-1-pk-dt-40m2-dieu-hoa-san-go-mat-pho-dong-cac-o-cho-dua">CHO THU&Ecirc; CHUNG CƯ MINI 1 PH&Ograve;NG NGỦ, 1 PK, DT 40M2 ĐIỀU H&Ograve;A S&Agrave;N GỖ MẶT PHỐ Đ&Ocirc;NG C&Aacute;C, &Ocirc; CHỢ DỪA</a></h2>
+            </div>
+            <div class="extra">
+                <div class="pull-left">
+                    <a href="#"><span class="fa fa-map-marker"></span>Đống Đa</a>
+                </div>
+                <div class="pull-right">
+                    <a href=""><span class="fa fa-info"></span>50 m<sup>2</sup></a>
+                </div>
+                <div class="type">
+                    <a href=""><span class="fa fa-home"></span>Chung cư, căn hộ</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="overlay">
+            <a href="#" title="">
+                <img src="img/play.png">
+            </a>
+        </div> -->
+    </div>
+</div>                                                    <div class="col-sm-6 col-md-4 thumbnail-item">
+    <div class="thumbnail">
+        <a href="http://phongtot.vn/chung-cu-can-ho/chinh-chu-cho-thue-can-ho-tang-5-toa-nha-ct1-trung-van-nam-tu-liem-ha-noi" title="Ch&iacute;nh chủ cho thu&ecirc; căn hộ tầng 5 t&ograve;a nh&agrave; CT1 Trung Văn Nam Từ Li&ecirc;m H&agrave; Nội">
+            <img src="http://media.phongtot.vn/xc5tx4cj/chinh-chu-cho-thue-can-ho-tang-5-toa-nha-ct1-trung-van-nam-tu-liem-ha-noi-thumb-yeiar.jpg" alt="" class="cover img-reponsive">
+        </a>
+        <div class="room-item-price">
+            <a href="">6,000,000 Đ/tháng</a>
+        </div>
+        <div class="caption">
+            <div class="title">
+                <h2><a href="http://phongtot.vn/chung-cu-can-ho/chinh-chu-cho-thue-can-ho-tang-5-toa-nha-ct1-trung-van-nam-tu-liem-ha-noi">Ch&iacute;nh chủ cho thu&ecirc; căn hộ tầng 5 t&ograve;a nh&agrave; CT1 Trung Văn Nam Từ Li&ecirc;m H&agrave; Nội</a></h2>
+            </div>
+            <div class="extra">
+                <div class="pull-left">
+                    <a href="#"><span class="fa fa-map-marker"></span>Từ Li&ecirc;m</a>
+                </div>
+                <div class="pull-right">
+                    <a href=""><span class="fa fa-info"></span>73 m<sup>2</sup></a>
+                </div>
+                <div class="type">
+                    <a href=""><span class="fa fa-home"></span>Chung cư, căn hộ</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="overlay">
+            <a href="#" title="">
+                <img src="img/play.png">
+            </a>
+        </div> -->
+    </div>
+</div>                                                    <div class="col-sm-6 col-md-4 thumbnail-item">
+    <div class="thumbnail">
+        <a href="http://phongtot.vn/chung-cu-can-ho/cho-thue-chung-cu-mini-day-du-tien-dieu-hoa-giuong-tu-dt45m2-1-pngukhach-pho-xa-dan" title="CHO THU&Ecirc; CHUNG CƯ MINI ĐẦY ĐỦ TIỆN ĐIỀU H&Ograve;A GIƯỜNG TỦ DT45M2 1 P.NGỦ,KH&Aacute;CH PHỐ X&Atilde; Đ&Agrave;N">
+            <img src="http://media.phongtot.vn/xc5tx4cj/cho-thue-chung-cu-mini-day-du-tien-dieu-hoa-giuong-tu-dt45m2-1-pngukhach-pho-xa-dan-thumb-3og8a.jpg" alt="" class="cover img-reponsive">
+        </a>
+        <div class="room-item-price">
+            <a href="">6,000,000 Đ/tháng</a>
+        </div>
+        <div class="caption">
+            <div class="title">
+                <h2><a href="http://phongtot.vn/chung-cu-can-ho/cho-thue-chung-cu-mini-day-du-tien-dieu-hoa-giuong-tu-dt45m2-1-pngukhach-pho-xa-dan">CHO THU&Ecirc; CHUNG CƯ MINI ĐẦY ĐỦ TIỆN ĐIỀU H&Ograve;A GIƯỜNG TỦ DT45M2 1 P.NGỦ,KH&Aacute;CH PHỐ X&Atilde; Đ&Agrave;N</a></h2>
+            </div>
+            <div class="extra">
+                <div class="pull-left">
+                    <a href="#"><span class="fa fa-map-marker"></span>Đống Đa</a>
+                </div>
+                <div class="pull-right">
+                    <a href=""><span class="fa fa-info"></span>40 m<sup>2</sup></a>
+                </div>
+                <div class="type">
+                    <a href=""><span class="fa fa-home"></span>Chung cư, căn hộ</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="overlay">
+            <a href="#" title="">
+                <img src="img/play.png">
+            </a>
+        </div> -->
+    </div>
+</div>                                                    <div class="col-sm-6 col-md-4 thumbnail-item">
+    <div class="thumbnail">
+        <a href="http://phongtot.vn/chung-cu-can-ho/chinh-chu-cho-thue-phong-chung-cu-mini-day-du-tien-nghi-dt38-45m2-so-96-la-thanh-cho-dua" title="CH&Iacute;NH CHỦ CHO THU&Ecirc; PH&Ograve;NG CHUNG CƯ MINI ĐẦY ĐỦ TIỆN NGHI. DT38-45M2, SỐ 96 LA THANH-CHỢ DỪA">
+            <img src="http://media.phongtot.vn/xc5tx4cj/chinh-chu-cho-thue-phong-chung-cu-mini-day-du-tien-nghi-dt38-45m2-so-96-la-thanh-cho-dua-thumb-lrkum.jpg" alt="" class="cover img-reponsive">
+        </a>
+        <div class="room-item-price">
+            <a href="">5,500,000 Đ/tháng</a>
+        </div>
+        <div class="caption">
+            <div class="title">
+                <h2><a href="http://phongtot.vn/chung-cu-can-ho/chinh-chu-cho-thue-phong-chung-cu-mini-day-du-tien-nghi-dt38-45m2-so-96-la-thanh-cho-dua">CH&Iacute;NH CHỦ CHO THU&Ecirc; PH&Ograve;NG CHUNG CƯ MINI ĐẦY ĐỦ TIỆN NGHI. DT38-45M2, SỐ 96 LA THANH-CHỢ DỪA</a></h2>
+            </div>
+            <div class="extra">
+                <div class="pull-left">
+                    <a href="#"><span class="fa fa-map-marker"></span>Đống Đa</a>
+                </div>
+                <div class="pull-right">
+                    <a href=""><span class="fa fa-info"></span>40 m<sup>2</sup></a>
+                </div>
+                <div class="type">
+                    <a href=""><span class="fa fa-home"></span>Chung cư, căn hộ</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="overlay">
+            <a href="#" title="">
+                <img src="img/play.png">
+            </a>
+        </div> -->
+    </div>
+</div>                                                    <div class="col-sm-6 col-md-4 thumbnail-item">
+    <div class="thumbnail">
+        <a href="http://phongtot.vn/chung-cu-can-ho/chinh-chu-cho-thue-chung-cu-mini-du-do-dt45-60m2-mat-pho-93-95-pho-dong-cac-o-cho-dua-1511514828gonk6" title="CH&Iacute;NH CHỦ CHO THU&Ecirc; CHUNG CƯ MINI ĐỦ ĐỒ DT45-60M2 MẶT PHỐ 93-95 PHỐ Đ&Ocirc;NG C&Aacute;C-&Ocirc; CHỢ DỪA.">
+            <img src="http://media.phongtot.vn/xc5tx4cj/chinh-chu-cho-thue-chung-cu-mini-du-do-dt45-60m2-mat-pho-93-95-pho-dong-cac-o-cho-dua-1511514828gonk6-thumb-310wp.jpg" alt="" class="cover img-reponsive">
+        </a>
+        <div class="room-item-price">
+            <a href="">7,000,000 Đ/tháng</a>
+        </div>
+        <div class="caption">
+            <div class="title">
+                <h2><a href="http://phongtot.vn/chung-cu-can-ho/chinh-chu-cho-thue-chung-cu-mini-du-do-dt45-60m2-mat-pho-93-95-pho-dong-cac-o-cho-dua-1511514828gonk6">CH&Iacute;NH CHỦ CHO THU&Ecirc; CHUNG CƯ MINI ĐỦ ĐỒ DT45-60M2 MẶT PHỐ 93-95 PHỐ Đ&Ocirc;NG C&Aacute;C-&Ocirc; CHỢ DỪA.</a></h2>
+            </div>
+            <div class="extra">
+                <div class="pull-left">
+                    <a href="#"><span class="fa fa-map-marker"></span>Đống Đa</a>
+                </div>
+                <div class="pull-right">
+                    <a href=""><span class="fa fa-info"></span>45 m<sup>2</sup></a>
+                </div>
+                <div class="type">
+                    <a href=""><span class="fa fa-home"></span>Chung cư, căn hộ</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="overlay">
+            <a href="#" title="">
+                <img src="img/play.png">
+            </a>
+        </div> -->
+    </div>
+</div>                                                    <div class="col-sm-6 col-md-4 thumbnail-item">
+    <div class="thumbnail">
+        <a href="http://phongtot.vn/chung-cu-can-ho/can-ho-cho-thue-cmt8-quan-10-tphcm-full-noi-that-day-du-tien-nghi-15114508260iyq9" title="Căn hộ cho thu&ecirc; CMT8, Quận 10, TP.HCM, full nội thất, đầy đủ tiện nghi">
+            <img src="http://media.phongtot.vn/xc5tx4cj/can-ho-cho-thue-cmt8-quan-10-tphcm-full-noi-that-day-du-tien-nghi-15114508260iyq9-thumb-ukcg2.jpg" alt="" class="cover img-reponsive">
+        </a>
+        <div class="room-item-price">
+            <a href="">7,000,000 Đ/tháng</a>
+        </div>
+        <div class="caption">
+            <div class="title">
+                <h2><a href="http://phongtot.vn/chung-cu-can-ho/can-ho-cho-thue-cmt8-quan-10-tphcm-full-noi-that-day-du-tien-nghi-15114508260iyq9">Căn hộ cho thu&ecirc; CMT8, Quận 10, TP.HCM, full nội thất, đầy đủ tiện nghi</a></h2>
+            </div>
+            <div class="extra">
+                <div class="pull-left">
+                    <a href="#"><span class="fa fa-map-marker"></span>10</a>
+                </div>
+                <div class="pull-right">
+                    <a href=""><span class="fa fa-info"></span>30 m<sup>2</sup></a>
+                </div>
+                <div class="type">
+                    <a href=""><span class="fa fa-home"></span>Chung cư, căn hộ</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="overlay">
+            <a href="#" title="">
+                <img src="img/play.png">
+            </a>
+        </div> -->
+    </div>
+</div>                                            </div>
+                </div>
+            </div>
+                                    <div class="tab-pane " id="tab_type_2">
+                <div class="thumbnail-list">
+                    <div class="row block-item">
+                                                    <div class="col-sm-6 col-md-4 thumbnail-item">
+    <div class="thumbnail">
+        <a href="http://phongtot.vn/phong-tro-nha-tro/phong-trocan-ho-mini-156-doan-nhu-haiq4-day-du-tien-nghi-co-bep-nau-an-khong-chung-chu" title="ph&ograve;ng trọ,căn hộ MINI 15/6 đo&agrave;n nhữ h&agrave;i,Q4 đầy đủ tiện nghi c&oacute; bếp nấu ăn kh&ocirc;ng chung chủ">
+            <img src="http://media.phongtot.vn/xc5tx4cj/phong-trocan-ho-mini-156-doan-nhu-haiq4-day-du-tien-nghi-co-bep-nau-an-khong-chung-chu-thumb-resized-royoq.JPG" alt="" class="cover img-reponsive">
+        </a>
+        <div class="room-item-price">
+            <a href="">5,000,000 Đ/tháng</a>
+        </div>
+        <div class="caption">
+            <div class="title">
+                <h2><a href="http://phongtot.vn/phong-tro-nha-tro/phong-trocan-ho-mini-156-doan-nhu-haiq4-day-du-tien-nghi-co-bep-nau-an-khong-chung-chu">ph&ograve;ng trọ,căn hộ MINI 15/6 đo&agrave;n nhữ h&agrave;i,Q4 đầy đủ tiện nghi c&oacute; bếp nấu ăn kh&ocirc;ng chung chủ</a></h2>
+            </div>
+            <div class="extra">
+                <div class="pull-left">
+                    <a href="#"><span class="fa fa-map-marker"></span>4</a>
+                </div>
+                <div class="pull-right">
+                    <a href=""><span class="fa fa-info"></span>65 m<sup>2</sup></a>
+                </div>
+                <div class="type">
+                    <a href=""><span class="fa fa-home"></span>Ph&ograve;ng trọ, nh&agrave; trọ</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="overlay">
+            <a href="#" title="">
+                <img src="img/play.png">
+            </a>
+        </div> -->
+    </div>
+</div>                                                    <div class="col-sm-6 col-md-4 thumbnail-item">
+    <div class="thumbnail">
+        <a href="http://phongtot.vn/phong-tro-nha-tro/phong-cho-thue-cach-mang-thang-tam-quan-10" title="Ph&ograve;ng cho thu&ecirc; C&aacute;ch Mạng Th&aacute;ng T&aacute;m, Quận 10">
+            <img src="http://media.phongtot.vn/xc5tx4cj/phong-cho-thue-cach-mang-thang-tam-quan-10-thumb-zjsgk.jpg" alt="" class="cover img-reponsive">
+        </a>
+        <div class="room-item-price">
+            <a href="">7,000,000 Đ/tháng</a>
+        </div>
+        <div class="caption">
+            <div class="title">
+                <h2><a href="http://phongtot.vn/phong-tro-nha-tro/phong-cho-thue-cach-mang-thang-tam-quan-10">Ph&ograve;ng cho thu&ecirc; C&aacute;ch Mạng Th&aacute;ng T&aacute;m, Quận 10</a></h2>
+            </div>
+            <div class="extra">
+                <div class="pull-left">
+                    <a href="#"><span class="fa fa-map-marker"></span>10</a>
+                </div>
+                <div class="pull-right">
+                    <a href=""><span class="fa fa-info"></span>30 m<sup>2</sup></a>
+                </div>
+                <div class="type">
+                    <a href=""><span class="fa fa-home"></span>Ph&ograve;ng trọ, nh&agrave; trọ</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="overlay">
+            <a href="#" title="">
+                <img src="img/play.png">
+            </a>
+        </div> -->
+    </div>
+</div>                                                    <div class="col-sm-6 col-md-4 thumbnail-item">
+    <div class="thumbnail">
+        <a href="http://phongtot.vn/phong-tro-nha-tro/cho-thue-can-ho-dich-vu-gan-cd-du-lich-dien-luc-dh-thuong-mai" title="Cho thu&ecirc; căn hộ dịch vụ gần CĐ du lịch điện lực, Đh thương mại">
+            <img src="http://media.phongtot.vn/xc5tx4cj/cho-thue-can-ho-dich-vu-gan-cd-du-lich-dien-luc-dh-thuong-mai-thumb-resized-i2lkb.jpg" alt="" class="cover img-reponsive">
+        </a>
+        <div class="room-item-price">
+            <a href="">3,000,000 Đ/tháng</a>
+        </div>
+        <div class="caption">
+            <div class="title">
+                <h2><a href="http://phongtot.vn/phong-tro-nha-tro/cho-thue-can-ho-dich-vu-gan-cd-du-lich-dien-luc-dh-thuong-mai">Cho thu&ecirc; căn hộ dịch vụ gần CĐ du lịch điện lực, Đh thương mại</a></h2>
+            </div>
+            <div class="extra">
+                <div class="pull-left">
+                    <a href="#"><span class="fa fa-map-marker"></span>Cầu Giấy</a>
+                </div>
+                <div class="pull-right">
+                    <a href=""><span class="fa fa-info"></span>25 m<sup>2</sup></a>
+                </div>
+                <div class="type">
+                    <a href=""><span class="fa fa-home"></span>Ph&ograve;ng trọ, nh&agrave; trọ</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="overlay">
+            <a href="#" title="">
+                <img src="img/play.png">
+            </a>
+        </div> -->
+    </div>
+</div>                                                    <div class="col-sm-6 col-md-4 thumbnail-item">
+    <div class="thumbnail">
+        <a href="http://phongtot.vn/phong-tro-nha-tro/cho-thue-phong-tro-gan-dh-thuong-mai-ngoai-ngu-su-pham" title="Cho thu&ecirc; ph&ograve;ng trọ gần ĐH thương mại, ngoại ngữ, sư phạm,....">
+            <img src="http://media.phongtot.vn/xc5tx4cj/cho-thue-phong-tro-gan-dh-thuong-mai-ngoai-ngu-su-pham-thumb-resized-i8kct.jpg" alt="" class="cover img-reponsive">
+        </a>
+        <div class="room-item-price">
+            <a href="">3,000,000 Đ/tháng</a>
+        </div>
+        <div class="caption">
+            <div class="title">
+                <h2><a href="http://phongtot.vn/phong-tro-nha-tro/cho-thue-phong-tro-gan-dh-thuong-mai-ngoai-ngu-su-pham">Cho thu&ecirc; ph&ograve;ng trọ gần ĐH thương mại, ngoại ngữ, sư phạm,....</a></h2>
+            </div>
+            <div class="extra">
+                <div class="pull-left">
+                    <a href="#"><span class="fa fa-map-marker"></span>Cầu Giấy</a>
+                </div>
+                <div class="pull-right">
+                    <a href=""><span class="fa fa-info"></span>25 m<sup>2</sup></a>
+                </div>
+                <div class="type">
+                    <a href=""><span class="fa fa-home"></span>Ph&ograve;ng trọ, nh&agrave; trọ</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="overlay">
+            <a href="#" title="">
+                <img src="img/play.png">
+            </a>
+        </div> -->
+    </div>
+</div>                                                    <div class="col-sm-6 col-md-4 thumbnail-item">
+    <div class="thumbnail">
+        <a href="http://phongtot.vn/phong-tro-nha-tro/phong-tro-cao-cap-full-noi-that-duong-ba-trac-q8" title="Ph&ograve;ng trọ cao cấp full nội thất Dương B&aacute; Trạc Q8">
+            <img src="http://media.phongtot.vn/xc5tx4cj/phong-tro-cao-cap-full-noi-that-duong-ba-trac-q8-thumb-4frhj.jpg" alt="" class="cover img-reponsive">
+        </a>
+        <div class="room-item-price">
+            <a href="">5,000,000 Đ/tháng</a>
+        </div>
+        <div class="caption">
+            <div class="title">
+                <h2><a href="http://phongtot.vn/phong-tro-nha-tro/phong-tro-cao-cap-full-noi-that-duong-ba-trac-q8">Ph&ograve;ng trọ cao cấp full nội thất Dương B&aacute; Trạc Q8</a></h2>
+            </div>
+            <div class="extra">
+                <div class="pull-left">
+                    <a href="#"><span class="fa fa-map-marker"></span>8</a>
+                </div>
+                <div class="pull-right">
+                    <a href=""><span class="fa fa-info"></span>25 m<sup>2</sup></a>
+                </div>
+                <div class="type">
+                    <a href=""><span class="fa fa-home"></span>Ph&ograve;ng trọ, nh&agrave; trọ</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="overlay">
+            <a href="#" title="">
+                <img src="img/play.png">
+            </a>
+        </div> -->
+    </div>
+</div>                                                    <div class="col-sm-6 col-md-4 thumbnail-item">
+    <div class="thumbnail">
+        <a href="http://phongtot.vn/phong-tro-nha-tro/nhuong-phong-tro-moi-xay" title="nhượng ph&ograve;ng trọ mới x&acirc;y">
+            <img src="http://media.phongtot.vn/xc5tx4cj/nhuong-phong-tro-moi-xay-thumb-resized-ga6ch.jpg" alt="" class="cover img-reponsive">
+        </a>
+        <div class="room-item-price">
+            <a href="">5,000,000 Đ/tháng</a>
+        </div>
+        <div class="caption">
+            <div class="title">
+                <h2><a href="http://phongtot.vn/phong-tro-nha-tro/nhuong-phong-tro-moi-xay">nhượng ph&ograve;ng trọ mới x&acirc;y</a></h2>
+            </div>
+            <div class="extra">
+                <div class="pull-left">
+                    <a href="#"><span class="fa fa-map-marker"></span>B&igrave;nh Thạnh</a>
+                </div>
+                <div class="pull-right">
+                    <a href=""><span class="fa fa-info"></span>30 m<sup>2</sup></a>
+                </div>
+                <div class="type">
+                    <a href=""><span class="fa fa-home"></span>Ph&ograve;ng trọ, nh&agrave; trọ</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="overlay">
+            <a href="#" title="">
+                <img src="img/play.png">
+            </a>
+        </div> -->
+    </div>
+</div>                                                    <div class="col-sm-6 col-md-4 thumbnail-item">
+    <div class="thumbnail">
+        <a href="http://phongtot.vn/phong-tro-nha-tro/can-1-nu-o-ghep-phong-2-nguoi-quan-binh-thanh" title="Cần 1 nữ ở gh&eacute;p ph&ograve;ng 2 người quận b&igrave;nh Thạnh">
+            <img src="http://media.phongtot.vn/xc5tx4cj/can-1-nu-o-ghep-phong-2-nguoi-quan-binh-thanh-thumb-bngbu.jpg" alt="" class="cover img-reponsive">
+        </a>
+        <div class="room-item-price">
+            <a href="">1,250,000 Đ/tháng</a>
+        </div>
+        <div class="caption">
+            <div class="title">
+                <h2><a href="http://phongtot.vn/phong-tro-nha-tro/can-1-nu-o-ghep-phong-2-nguoi-quan-binh-thanh">Cần 1 nữ ở gh&eacute;p ph&ograve;ng 2 người quận b&igrave;nh Thạnh</a></h2>
+            </div>
+            <div class="extra">
+                <div class="pull-left">
+                    <a href="#"><span class="fa fa-map-marker"></span>B&igrave;nh Thạnh</a>
+                </div>
+                <div class="pull-right">
+                    <a href=""><span class="fa fa-info"></span>20 m<sup>2</sup></a>
+                </div>
+                <div class="type">
+                    <a href=""><span class="fa fa-home"></span>Ph&ograve;ng trọ, nh&agrave; trọ</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="overlay">
+            <a href="#" title="">
+                <img src="img/play.png">
+            </a>
+        </div> -->
+    </div>
+</div>                                                    <div class="col-sm-6 col-md-4 thumbnail-item">
+    <div class="thumbnail">
+        <a href="http://phongtot.vn/phong-tro-nha-tro/can-tim-1-ban-nu-o-ghep-binh-thanh" title="Cần t&igrave;m 1 bạn nữ ở gh&eacute;p B&igrave;nh Thạnh">
+            <img src="http://media.phongtot.vn/xc5tx4cj/can-tim-1-ban-nu-o-ghep-binh-thanh-thumb-rcqj0.png" alt="" class="cover img-reponsive">
+        </a>
+        <div class="room-item-price">
+            <a href="">1,200,000 Đ/tháng</a>
+        </div>
+        <div class="caption">
+            <div class="title">
+                <h2><a href="http://phongtot.vn/phong-tro-nha-tro/can-tim-1-ban-nu-o-ghep-binh-thanh">Cần t&igrave;m 1 bạn nữ ở gh&eacute;p B&igrave;nh Thạnh</a></h2>
+            </div>
+            <div class="extra">
+                <div class="pull-left">
+                    <a href="#"><span class="fa fa-map-marker"></span>B&igrave;nh Thạnh</a>
+                </div>
+                <div class="pull-right">
+                    <a href=""><span class="fa fa-info"></span>50 m<sup>2</sup></a>
+                </div>
+                <div class="type">
+                    <a href=""><span class="fa fa-home"></span>Ph&ograve;ng trọ, nh&agrave; trọ</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="overlay">
+            <a href="#" title="">
+                <img src="img/play.png">
+            </a>
+        </div> -->
+    </div>
+</div>                                                    <div class="col-sm-6 col-md-4 thumbnail-item">
+    <div class="thumbnail">
+        <a href="http://phongtot.vn/phong-tro-nha-tro/can-2-nu-o-ghep-tai-quan-7" title="Cần 2 nữ ở gh&eacute;p tại quận 7">
+            <img src="http://media.phongtot.vn/xc5tx4cj/can-2-nu-o-ghep-tai-quan-7-thumb-resized-m9yau.JPG" alt="" class="cover img-reponsive">
+        </a>
+        <div class="room-item-price">
+            <a href="">700,000 Đ/tháng</a>
+        </div>
+        <div class="caption">
+            <div class="title">
+                <h2><a href="http://phongtot.vn/phong-tro-nha-tro/can-2-nu-o-ghep-tai-quan-7">Cần 2 nữ ở gh&eacute;p tại quận 7</a></h2>
+            </div>
+            <div class="extra">
+                <div class="pull-left">
+                    <a href="#"><span class="fa fa-map-marker"></span>7</a>
+                </div>
+                <div class="pull-right">
+                    <a href=""><span class="fa fa-info"></span>35 m<sup>2</sup></a>
+                </div>
+                <div class="type">
+                    <a href=""><span class="fa fa-home"></span>Ph&ograve;ng trọ, nh&agrave; trọ</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="overlay">
+            <a href="#" title="">
+                <img src="img/play.png">
+            </a>
+        </div> -->
+    </div>
+</div>                                            </div>
+                </div>
+            </div>
+                                    <div class="tab-pane " id="tab_type_3">
+                <div class="thumbnail-list">
+                    <div class="row block-item">
+                                                    <div class="col-sm-6 col-md-4 thumbnail-item">
+    <div class="thumbnail">
+        <a href="http://phongtot.vn/nha-nguyen-can/cho-thue-can-ho-cao-cap-3-phong-ngu-2-wc-thang-may-toi-phong" title="CHo thu&ecirc; Căn hộ cao cấp 3 phỏng ngủ , 2 WC , thang m&aacute;y tới ph&ograve;ng">
+            <img src="http://media.phongtot.vn/xc5tx4cj/cho-thue-can-ho-cao-cap-3-phong-ngu-2-wc-thang-may-toi-phong-thumb-m3zk9.jpg" alt="" class="cover img-reponsive">
+        </a>
+        <div class="room-item-price">
+            <a href="">15,000,000 Đ/tháng</a>
+        </div>
+        <div class="caption">
+            <div class="title">
+                <h2><a href="http://phongtot.vn/nha-nguyen-can/cho-thue-can-ho-cao-cap-3-phong-ngu-2-wc-thang-may-toi-phong">CHo thu&ecirc; Căn hộ cao cấp 3 phỏng ngủ , 2 WC , thang m&aacute;y tới ph&ograve;ng</a></h2>
+            </div>
+            <div class="extra">
+                <div class="pull-left">
+                    <a href="#"><span class="fa fa-map-marker"></span>11</a>
+                </div>
+                <div class="pull-right">
+                    <a href=""><span class="fa fa-info"></span>150 m<sup>2</sup></a>
+                </div>
+                <div class="type">
+                    <a href=""><span class="fa fa-home"></span>Nh&agrave; nguy&ecirc;n căn</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="overlay">
+            <a href="#" title="">
+                <img src="img/play.png">
+            </a>
+        </div> -->
+    </div>
+</div>                                                    <div class="col-sm-6 col-md-4 thumbnail-item">
+    <div class="thumbnail">
+        <a href="http://phongtot.vn/nha-nguyen-can/cho-thue-can-ho-3-phong-ngu-ngay-lanh-binh-thang-quan-11" title="Cho thu&ecirc; Căn hộ 3 ph&ograve;ng ngủ ngay L&atilde;nh Binh Thăng , Quận 11">
+            <img src="http://media.phongtot.vn/xc5tx4cj/cho-thue-can-ho-3-phong-ngu-ngay-lanh-binh-thang-quan-11-thumb-fyrgn.jpg" alt="" class="cover img-reponsive">
+        </a>
+        <div class="room-item-price">
+            <a href="">15,000,000 Đ/tháng</a>
+        </div>
+        <div class="caption">
+            <div class="title">
+                <h2><a href="http://phongtot.vn/nha-nguyen-can/cho-thue-can-ho-3-phong-ngu-ngay-lanh-binh-thang-quan-11">Cho thu&ecirc; Căn hộ 3 ph&ograve;ng ngủ ngay L&atilde;nh Binh Thăng , Quận 11</a></h2>
+            </div>
+            <div class="extra">
+                <div class="pull-left">
+                    <a href="#"><span class="fa fa-map-marker"></span>11</a>
+                </div>
+                <div class="pull-right">
+                    <a href=""><span class="fa fa-info"></span>150 m<sup>2</sup></a>
+                </div>
+                <div class="type">
+                    <a href=""><span class="fa fa-home"></span>Nh&agrave; nguy&ecirc;n căn</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="overlay">
+            <a href="#" title="">
+                <img src="img/play.png">
+            </a>
+        </div> -->
+    </div>
+</div>                                                    <div class="col-sm-6 col-md-4 thumbnail-item">
+    <div class="thumbnail">
+        <a href="http://phongtot.vn/nha-nguyen-can/cho-thue-can-ho-3-phong-ngu-quan-11" title="Cho thu&ecirc; căn hộ 3 ph&ograve;ng ngủ , QUận 11">
+            <img src="http://media.phongtot.vn/xc5tx4cj/cho-thue-can-ho-3-phong-ngu-quan-11-thumb-lw8hn.jpg" alt="" class="cover img-reponsive">
+        </a>
+        <div class="room-item-price">
+            <a href="">15,000,000 Đ/tháng</a>
+        </div>
+        <div class="caption">
+            <div class="title">
+                <h2><a href="http://phongtot.vn/nha-nguyen-can/cho-thue-can-ho-3-phong-ngu-quan-11">Cho thu&ecirc; căn hộ 3 ph&ograve;ng ngủ , QUận 11</a></h2>
+            </div>
+            <div class="extra">
+                <div class="pull-left">
+                    <a href="#"><span class="fa fa-map-marker"></span>11</a>
+                </div>
+                <div class="pull-right">
+                    <a href=""><span class="fa fa-info"></span>150 m<sup>2</sup></a>
+                </div>
+                <div class="type">
+                    <a href=""><span class="fa fa-home"></span>Nh&agrave; nguy&ecirc;n căn</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="overlay">
+            <a href="#" title="">
+                <img src="img/play.png">
+            </a>
+        </div> -->
+    </div>
+</div>                                                    <div class="col-sm-6 col-md-4 thumbnail-item">
+    <div class="thumbnail">
+        <a href="http://phongtot.vn/nha-nguyen-can/can-ho-dich-vu-cao-cap-du-noi-that-150-m2-3-phong-ngu-tai-q11" title="Căn hộ dịch vụ cao cấp đủ nội thất 150 m2. 3 ph&ograve;ng ngủ tại Q.11">
+            <img src="http://media.phongtot.vn/xc5tx4cj/can-ho-dich-vu-cao-cap-du-noi-that-150-m2-3-phong-ngu-tai-q11-thumb-cvkhn.jpg" alt="" class="cover img-reponsive">
+        </a>
+        <div class="room-item-price">
+            <a href="">15,000,000 Đ/tháng</a>
+        </div>
+        <div class="caption">
+            <div class="title">
+                <h2><a href="http://phongtot.vn/nha-nguyen-can/can-ho-dich-vu-cao-cap-du-noi-that-150-m2-3-phong-ngu-tai-q11">Căn hộ dịch vụ cao cấp đủ nội thất 150 m2. 3 ph&ograve;ng ngủ tại Q.11</a></h2>
+            </div>
+            <div class="extra">
+                <div class="pull-left">
+                    <a href="#"><span class="fa fa-map-marker"></span>11</a>
+                </div>
+                <div class="pull-right">
+                    <a href=""><span class="fa fa-info"></span>150 m<sup>2</sup></a>
+                </div>
+                <div class="type">
+                    <a href=""><span class="fa fa-home"></span>Nh&agrave; nguy&ecirc;n căn</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="overlay">
+            <a href="#" title="">
+                <img src="img/play.png">
+            </a>
+        </div> -->
+    </div>
+</div>                                                    <div class="col-sm-6 col-md-4 thumbnail-item">
+    <div class="thumbnail">
+        <a href="http://phongtot.vn/nha-nguyen-can/cho-thue-can-ho-cao-cap-full-noi-that-quan-11" title="Cho thu&ecirc; Căn Hộ cao cấp full nội thất Quận 11 ">
+            <img src="http://media.phongtot.vn/xc5tx4cj/cho-thue-can-ho-cao-cap-full-noi-that-quan-11-thumb-resized-sp7tg.jpg" alt="" class="cover img-reponsive">
+        </a>
+        <div class="room-item-price">
+            <a href="">6,000,000 Đ/tháng</a>
+        </div>
+        <div class="caption">
+            <div class="title">
+                <h2><a href="http://phongtot.vn/nha-nguyen-can/cho-thue-can-ho-cao-cap-full-noi-that-quan-11">Cho thu&ecirc; Căn Hộ cao cấp full nội thất Quận 11 </a></h2>
+            </div>
+            <div class="extra">
+                <div class="pull-left">
+                    <a href="#"><span class="fa fa-map-marker"></span>11</a>
+                </div>
+                <div class="pull-right">
+                    <a href=""><span class="fa fa-info"></span>35 m<sup>2</sup></a>
+                </div>
+                <div class="type">
+                    <a href=""><span class="fa fa-home"></span>Nh&agrave; nguy&ecirc;n căn</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="overlay">
+            <a href="#" title="">
+                <img src="img/play.png">
+            </a>
+        </div> -->
+    </div>
+</div>                                                    <div class="col-sm-6 col-md-4 thumbnail-item">
+    <div class="thumbnail">
+        <a href="http://phongtot.vn/nha-nguyen-can/cho-thue-nha-4-tang-1511037967bkvsg" title="Cho thu&ecirc; nh&agrave; 4 tầng">
+            <img src="http://media.phongtot.vn/xc5tx4cj/cho-thue-nha-4-tang-1511037848zxv7b-thumb-kifkz.jpg" alt="" class="cover img-reponsive">
+        </a>
+        <div class="room-item-price">
+            <a href="">6,000,000 Đ/tháng</a>
+        </div>
+        <div class="caption">
+            <div class="title">
+                <h2><a href="http://phongtot.vn/nha-nguyen-can/cho-thue-nha-4-tang-1511037967bkvsg">Cho thu&ecirc; nh&agrave; 4 tầng</a></h2>
+            </div>
+            <div class="extra">
+                <div class="pull-left">
+                    <a href="#"><span class="fa fa-map-marker"></span>Đống Đa</a>
+                </div>
+                <div class="pull-right">
+                    <a href=""><span class="fa fa-info"></span>100 m<sup>2</sup></a>
+                </div>
+                <div class="type">
+                    <a href=""><span class="fa fa-home"></span>Nh&agrave; nguy&ecirc;n căn</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="overlay">
+            <a href="#" title="">
+                <img src="img/play.png">
+            </a>
+        </div> -->
+    </div>
+</div>                                                    <div class="col-sm-6 col-md-4 thumbnail-item">
+    <div class="thumbnail">
+        <a href="http://phongtot.vn/nha-nguyen-can/tim-ban-nu-o-ghep-1510669266nmguj" title="T&igrave;m bạn nữ ở gh&eacute;p">
+            <img src="http://media.phongtot.vn/xc5tx4cj/tim-ban-nu-o-ghep-1510669266nmguj-thumb-clzdq.jpg" alt="" class="cover img-reponsive">
+        </a>
+        <div class="room-item-price">
+            <a href="">670,000 Đ/tháng</a>
+        </div>
+        <div class="caption">
+            <div class="title">
+                <h2><a href="http://phongtot.vn/nha-nguyen-can/tim-ban-nu-o-ghep-1510669266nmguj">T&igrave;m bạn nữ ở gh&eacute;p</a></h2>
+            </div>
+            <div class="extra">
+                <div class="pull-left">
+                    <a href="#"><span class="fa fa-map-marker"></span>G&ograve; Vấp</a>
+                </div>
+                <div class="pull-right">
+                    <a href=""><span class="fa fa-info"></span>25 m<sup>2</sup></a>
+                </div>
+                <div class="type">
+                    <a href=""><span class="fa fa-home"></span>Nh&agrave; nguy&ecirc;n căn</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="overlay">
+            <a href="#" title="">
+                <img src="img/play.png">
+            </a>
+        </div> -->
+    </div>
+</div>                                                    <div class="col-sm-6 col-md-4 thumbnail-item">
+    <div class="thumbnail">
+        <a href="http://phongtot.vn/nha-nguyen-can/tuyen-nu-o-ghep-chung-cu-4821-no-trang-long-phuong-13-quan-binh-thanh" title="Tuyển nữ ở gh&eacute;p chung cư 482/1 Nơ Trang Long Phường 13 Quận B&Igrave;nh Thạnh">
+            <img src="http://media.phongtot.vn/xc5tx4cj/tuyen-nu-o-ghep-chung-cu-4821-no-trang-long-phuong-13-quan-binh-thanh-thumb-cqlnu.png" alt="" class="cover img-reponsive">
+        </a>
+        <div class="room-item-price">
+            <a href="">4,000,000 Đ/tháng</a>
+        </div>
+        <div class="caption">
+            <div class="title">
+                <h2><a href="http://phongtot.vn/nha-nguyen-can/tuyen-nu-o-ghep-chung-cu-4821-no-trang-long-phuong-13-quan-binh-thanh">Tuyển nữ ở gh&eacute;p chung cư 482/1 Nơ Trang Long Phường 13 Quận B&Igrave;nh Thạnh</a></h2>
+            </div>
+            <div class="extra">
+                <div class="pull-left">
+                    <a href="#"><span class="fa fa-map-marker"></span>B&igrave;nh Thạnh</a>
+                </div>
+                <div class="pull-right">
+                    <a href=""><span class="fa fa-info"></span>70 m<sup>2</sup></a>
+                </div>
+                <div class="type">
+                    <a href=""><span class="fa fa-home"></span>Nh&agrave; nguy&ecirc;n căn</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="overlay">
+            <a href="#" title="">
+                <img src="img/play.png">
+            </a>
+        </div> -->
+    </div>
+</div>                                                    <div class="col-sm-6 col-md-4 thumbnail-item">
+    <div class="thumbnail">
+        <a href="http://phongtot.vn/nha-nguyen-can/chu-dau-tu-ban-chung-cu-nguyen-chi-thanh-hon-1-tycan-43-46m2-o-ngay" title=" Chủ đầu tư b&aacute;n chung cư Nguyễn Ch&iacute; Thanh hơn 1 tỷ/căn 43-46m2 , ở ngay  ">
+            <img src="http://media.phongtot.vn/xc5tx4cj/chu-dau-tu-ban-chung-cu-nguyen-chi-thanh-hon-1-tycan-43-46m2-o-ngay-thumb-resized-m00rj.jpg" alt="" class="cover img-reponsive">
+        </a>
+        <div class="room-item-price">
+            <a href="">1,070,000,000 Đ/tháng</a>
+        </div>
+        <div class="caption">
+            <div class="title">
+                <h2><a href="http://phongtot.vn/nha-nguyen-can/chu-dau-tu-ban-chung-cu-nguyen-chi-thanh-hon-1-tycan-43-46m2-o-ngay"> Chủ đầu tư b&aacute;n chung cư Nguyễn Ch&iacute; Thanh hơn 1 tỷ/căn 43-46m2 , ở ngay  </a></h2>
+            </div>
+            <div class="extra">
+                <div class="pull-left">
+                    <a href="#"><span class="fa fa-map-marker"></span>Đống Đa</a>
+                </div>
+                <div class="pull-right">
+                    <a href=""><span class="fa fa-info"></span>43 m<sup>2</sup></a>
+                </div>
+                <div class="type">
+                    <a href=""><span class="fa fa-home"></span>Nh&agrave; nguy&ecirc;n căn</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="overlay">
+            <a href="#" title="">
+                <img src="img/play.png">
+            </a>
+        </div> -->
+    </div>
+</div>                                            </div>
+                </div>
+            </div>
+                                    <div class="tab-pane " id="tab_type_4">
+                <div class="thumbnail-list">
+                    <div class="row block-item">
+                                                    <div class="col-sm-6 col-md-4 thumbnail-item">
+    <div class="thumbnail">
+        <a href="http://phongtot.vn/van-phong/cho-thue-van-phong-tai-times-city" title="cho thu&ecirc; văn ph&ograve;ng tai times city">
+            <img src="http://media.phongtot.vn/xc5tx4cj/cho-thue-van-phong-tai-times-city-thumb-voved.jpg" alt="" class="cover img-reponsive">
+        </a>
+        <div class="room-item-price">
+            <a href="">54,000,000 Đ/tháng</a>
+        </div>
+        <div class="caption">
+            <div class="title">
+                <h2><a href="http://phongtot.vn/van-phong/cho-thue-van-phong-tai-times-city">cho thu&ecirc; văn ph&ograve;ng tai times city</a></h2>
+            </div>
+            <div class="extra">
+                <div class="pull-left">
+                    <a href="#"><span class="fa fa-map-marker"></span>Hai B&agrave; Trưng</a>
+                </div>
+                <div class="pull-right">
+                    <a href=""><span class="fa fa-info"></span>200 m<sup>2</sup></a>
+                </div>
+                <div class="type">
+                    <a href=""><span class="fa fa-home"></span>Văn ph&ograve;ng</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="overlay">
+            <a href="#" title="">
+                <img src="img/play.png">
+            </a>
+        </div> -->
+    </div>
+</div>                                                    <div class="col-sm-6 col-md-4 thumbnail-item">
+    <div class="thumbnail">
+        <a href="http://phongtot.vn/van-phong/cho-thue-nha-1508966885aw34s" title="cho thue nha ">
+            <img src="" alt="" class="cover img-reponsive">
+        </a>
+        <div class="room-item-price">
+            <a href="">18,000,000 Đ/tháng</a>
+        </div>
+        <div class="caption">
+            <div class="title">
+                <h2><a href="http://phongtot.vn/van-phong/cho-thue-nha-1508966885aw34s">cho thue nha </a></h2>
+            </div>
+            <div class="extra">
+                <div class="pull-left">
+                    <a href="#"><span class="fa fa-map-marker"></span>Thanh Xu&acirc;n</a>
+                </div>
+                <div class="pull-right">
+                    <a href=""><span class="fa fa-info"></span>240 m<sup>2</sup></a>
+                </div>
+                <div class="type">
+                    <a href=""><span class="fa fa-home"></span>Văn ph&ograve;ng</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="overlay">
+            <a href="#" title="">
+                <img src="img/play.png">
+            </a>
+        </div> -->
+    </div>
+</div>                                                    <div class="col-sm-6 col-md-4 thumbnail-item">
+    <div class="thumbnail">
+        <a href="http://phongtot.vn/van-phong/chinh-chu-cho-thue-van-phong-tang-2-voi-dt-60m2-tai-96-de-la-thanh-o-to-do-cua-gia-85tri-1506091017phnnh" title="CH&Iacute;NH CHỦ CHO THU&Ecirc; VĂN PH&Ograve;NG TẦNG 2 VỚI DT 60M2 TẠI 96 Đ&Ecirc; LA TH&Agrave;NH, &Ocirc; T&Ocirc; ĐỖ CỬA GI&Aacute; 8.5TRI">
+            <img src="http://media.phongtot.vn/xc5tx4cj/chinh-chu-cho-thue-van-phong-tang-2-voi-dt-60m2-tai-96-de-la-thanh-o-to-do-cua-gia-85tri-1506091017phnnh-thumb-slnsi.jpg" alt="" class="cover img-reponsive">
+        </a>
+        <div class="room-item-price">
+            <a href="">8,500,000 Đ/tháng</a>
+        </div>
+        <div class="caption">
+            <div class="title">
+                <h2><a href="http://phongtot.vn/van-phong/chinh-chu-cho-thue-van-phong-tang-2-voi-dt-60m2-tai-96-de-la-thanh-o-to-do-cua-gia-85tri-1506091017phnnh">CH&Iacute;NH CHỦ CHO THU&Ecirc; VĂN PH&Ograve;NG TẦNG 2 VỚI DT 60M2 TẠI 96 Đ&Ecirc; LA TH&Agrave;NH, &Ocirc; T&Ocirc; ĐỖ CỬA GI&Aacute; 8.5TRI</a></h2>
+            </div>
+            <div class="extra">
+                <div class="pull-left">
+                    <a href="#"><span class="fa fa-map-marker"></span>Đống Đa</a>
+                </div>
+                <div class="pull-right">
+                    <a href=""><span class="fa fa-info"></span>65 m<sup>2</sup></a>
+                </div>
+                <div class="type">
+                    <a href=""><span class="fa fa-home"></span>Văn ph&ograve;ng</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="overlay">
+            <a href="#" title="">
+                <img src="img/play.png">
+            </a>
+        </div> -->
+    </div>
+</div>                                                    <div class="col-sm-6 col-md-4 thumbnail-item">
+    <div class="thumbnail">
+        <a href="http://phongtot.vn/van-phong/chinh-chu-cho-thue-van-phong-tang-2-voi-dt-60m2-tai-96-de-la-thanh-o-to-do-cua-gia-85tri" title="CH&Iacute;NH CHỦ CHO THU&Ecirc; VĂN PH&Ograve;NG TẦNG 2 VỚI DT 60M2 TẠI 96 Đ&Ecirc; LA TH&Agrave;NH, &Ocirc; T&Ocirc; ĐỖ CỬA GI&Aacute; 8.5TRI">
+            <img src="http://media.phongtot.vn/xc5tx4cj/chinh-chu-cho-thue-van-phong-tang-2-voi-dt-60m2-tai-96-de-la-thanh-o-to-do-cua-gia-85tri-thumb-tujoz.jpg" alt="" class="cover img-reponsive">
+        </a>
+        <div class="room-item-price">
+            <a href="">8,500,000 Đ/tháng</a>
+        </div>
+        <div class="caption">
+            <div class="title">
+                <h2><a href="http://phongtot.vn/van-phong/chinh-chu-cho-thue-van-phong-tang-2-voi-dt-60m2-tai-96-de-la-thanh-o-to-do-cua-gia-85tri">CH&Iacute;NH CHỦ CHO THU&Ecirc; VĂN PH&Ograve;NG TẦNG 2 VỚI DT 60M2 TẠI 96 Đ&Ecirc; LA TH&Agrave;NH, &Ocirc; T&Ocirc; ĐỖ CỬA GI&Aacute; 8.5TRI</a></h2>
+            </div>
+            <div class="extra">
+                <div class="pull-left">
+                    <a href="#"><span class="fa fa-map-marker"></span>Đống Đa</a>
+                </div>
+                <div class="pull-right">
+                    <a href=""><span class="fa fa-info"></span>60 m<sup>2</sup></a>
+                </div>
+                <div class="type">
+                    <a href=""><span class="fa fa-home"></span>Văn ph&ograve;ng</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="overlay">
+            <a href="#" title="">
+                <img src="img/play.png">
+            </a>
+        </div> -->
+    </div>
+</div>                                                    <div class="col-sm-6 col-md-4 thumbnail-item">
+    <div class="thumbnail">
+        <a href="http://phongtot.vn/van-phong/chinh-chu-cho-thue-cua-hang-spa-van-phong-mat-pho-de-la-thanh-nga-tu-xa-dan-1505806651mugyt" title="CH&Iacute;NH CHỦ CHO THU&Ecirc; CỬA H&Agrave;NG, SPA, VĂN PH&Ograve;NG MẶT PHỐ Đ&Ecirc; LA TH&Agrave;NH-NG&Atilde; TƯ X&Atilde; Đ&Agrave;N">
+            <img src="http://media.phongtot.vn/xc5tx4cj/chinh-chu-cho-thue-cua-hang-spa-van-phong-mat-pho-de-la-thanh-nga-tu-xa-dan-1505806651mugyt-thumb-23ntp.jpg" alt="" class="cover img-reponsive">
+        </a>
+        <div class="room-item-price">
+            <a href="">8,500,000 Đ/tháng</a>
+        </div>
+        <div class="caption">
+            <div class="title">
+                <h2><a href="http://phongtot.vn/van-phong/chinh-chu-cho-thue-cua-hang-spa-van-phong-mat-pho-de-la-thanh-nga-tu-xa-dan-1505806651mugyt">CH&Iacute;NH CHỦ CHO THU&Ecirc; CỬA H&Agrave;NG, SPA, VĂN PH&Ograve;NG MẶT PHỐ Đ&Ecirc; LA TH&Agrave;NH-NG&Atilde; TƯ X&Atilde; Đ&Agrave;N</a></h2>
+            </div>
+            <div class="extra">
+                <div class="pull-left">
+                    <a href="#"><span class="fa fa-map-marker"></span>Đống Đa</a>
+                </div>
+                <div class="pull-right">
+                    <a href=""><span class="fa fa-info"></span>65 m<sup>2</sup></a>
+                </div>
+                <div class="type">
+                    <a href=""><span class="fa fa-home"></span>Văn ph&ograve;ng</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="overlay">
+            <a href="#" title="">
+                <img src="img/play.png">
+            </a>
+        </div> -->
+    </div>
+</div>                                                    <div class="col-sm-6 col-md-4 thumbnail-item">
+    <div class="thumbnail">
+        <a href="http://phongtot.vn/van-phong/cho-thue-chung-cu-mini-1505376568w49kk" title="cho thu&ecirc; chung cư mini ">
+            <img src="http://media.phongtot.vn/xc5tx4cj/cho-thue-chung-cu-mini-1505376568w49kk-thumb-qei2m.jpg" alt="" class="cover img-reponsive">
+        </a>
+        <div class="room-item-price">
+            <a href="">8,500,000 Đ/tháng</a>
+        </div>
+        <div class="caption">
+            <div class="title">
+                <h2><a href="http://phongtot.vn/van-phong/cho-thue-chung-cu-mini-1505376568w49kk">cho thu&ecirc; chung cư mini </a></h2>
+            </div>
+            <div class="extra">
+                <div class="pull-left">
+                    <a href="#"><span class="fa fa-map-marker"></span>Đống Đa</a>
+                </div>
+                <div class="pull-right">
+                    <a href=""><span class="fa fa-info"></span>40 m<sup>2</sup></a>
+                </div>
+                <div class="type">
+                    <a href=""><span class="fa fa-home"></span>Văn ph&ograve;ng</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="overlay">
+            <a href="#" title="">
+                <img src="img/play.png">
+            </a>
+        </div> -->
+    </div>
+</div>                                                    <div class="col-sm-6 col-md-4 thumbnail-item">
+    <div class="thumbnail">
+        <a href="http://phongtot.vn/van-phong/cho-thue-phong-day-hoc-theo-gio-long-bien" title="Cho thu&ecirc; ph&ograve;ng dạy học theo giờ Long Bi&ecirc;n.">
+            <img src="http://media.phongtot.vn/xc5tx4cj/cho-thue-phong-day-hoc-theo-gio-long-bien-thumb-rm4zf.JPG" alt="" class="cover img-reponsive">
+        </a>
+        <div class="room-item-price">
+            <a href="">500,000 Đ/tháng</a>
+        </div>
+        <div class="caption">
+            <div class="title">
+                <h2><a href="http://phongtot.vn/van-phong/cho-thue-phong-day-hoc-theo-gio-long-bien">Cho thu&ecirc; ph&ograve;ng dạy học theo giờ Long Bi&ecirc;n.</a></h2>
+            </div>
+            <div class="extra">
+                <div class="pull-left">
+                    <a href="#"><span class="fa fa-map-marker"></span>Long Bi&ecirc;n</a>
+                </div>
+                <div class="pull-right">
+                    <a href=""><span class="fa fa-info"></span>30 m<sup>2</sup></a>
+                </div>
+                <div class="type">
+                    <a href=""><span class="fa fa-home"></span>Văn ph&ograve;ng</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="overlay">
+            <a href="#" title="">
+                <img src="img/play.png">
+            </a>
+        </div> -->
+    </div>
+</div>                                                    <div class="col-sm-6 col-md-4 thumbnail-item">
+    <div class="thumbnail">
+        <a href="http://phongtot.vn/van-phong/cho-thue-mat-bang-lam-van-phong-spa" title="cho thu&ecirc; mặt bằng l&agrave;m văn ph&ograve;ng, spa ">
+            <img src="http://media.phongtot.vn/xc5tx4cj/cho-thue-mat-bang-lam-van-phong-spa-thumb-mkc64.jpg" alt="" class="cover img-reponsive">
+        </a>
+        <div class="room-item-price">
+            <a href="">10,000,000 Đ/tháng</a>
+        </div>
+        <div class="caption">
+            <div class="title">
+                <h2><a href="http://phongtot.vn/van-phong/cho-thue-mat-bang-lam-van-phong-spa">cho thu&ecirc; mặt bằng l&agrave;m văn ph&ograve;ng, spa </a></h2>
+            </div>
+            <div class="extra">
+                <div class="pull-left">
+                    <a href="#"><span class="fa fa-map-marker"></span>Đống Đa</a>
+                </div>
+                <div class="pull-right">
+                    <a href=""><span class="fa fa-info"></span>65 m<sup>2</sup></a>
+                </div>
+                <div class="type">
+                    <a href=""><span class="fa fa-home"></span>Văn ph&ograve;ng</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="overlay">
+            <a href="#" title="">
+                <img src="img/play.png">
+            </a>
+        </div> -->
+    </div>
+</div>                                                    <div class="col-sm-6 col-md-4 thumbnail-item">
+    <div class="thumbnail">
+        <a href="http://phongtot.vn/van-phong/cho-thue-van-phong-1505029431dwzxr" title="cho thu&ecirc; văn ph&ograve;ng ">
+            <img src="http://media.phongtot.vn/xc5tx4cj/cho-thue-van-phong-1505029431dwzxr-thumb-4mdd3.jpg" alt="" class="cover img-reponsive">
+        </a>
+        <div class="room-item-price">
+            <a href="">8,500,000 Đ/tháng</a>
+        </div>
+        <div class="caption">
+            <div class="title">
+                <h2><a href="http://phongtot.vn/van-phong/cho-thue-van-phong-1505029431dwzxr">cho thu&ecirc; văn ph&ograve;ng </a></h2>
+            </div>
+            <div class="extra">
+                <div class="pull-left">
+                    <a href="#"><span class="fa fa-map-marker"></span>Đống Đa</a>
+                </div>
+                <div class="pull-right">
+                    <a href=""><span class="fa fa-info"></span>65 m<sup>2</sup></a>
+                </div>
+                <div class="type">
+                    <a href=""><span class="fa fa-home"></span>Văn ph&ograve;ng</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="overlay">
+            <a href="#" title="">
+                <img src="img/play.png">
+            </a>
+        </div> -->
+    </div>
+</div>                                            </div>
+                </div>
+            </div>
+                                    <div class="tab-pane " id="tab_type_5">
+                <div class="thumbnail-list">
+                    <div class="row block-item">
+                                                    <div class="col-sm-6 col-md-4 thumbnail-item">
+    <div class="thumbnail">
+        <a href="http://phongtot.vn/chung-cu-can-ho/cho-thue-can-ho-gemek-2-ngu-do-co-ban-gia-5-trieuthang" title="Cho thu&ecirc; căn hộ Gemek 2 ngủ đồ cơ bản gi&aacute; 5 triệu/th&aacute;ng">
+            <img src="http://media.phongtot.vn/xc5tx4cj/cho-thue-can-ho-gemek-2-ngu-do-co-ban-gia-5-trieuthang-thumb-e25mr.jpg" alt="" class="cover img-reponsive">
+        </a>
+        <div class="room-item-price">
+            <a href="">5,000,000 Đ/tháng</a>
+        </div>
+        <div class="caption">
+            <div class="title">
+                <h2><a href="http://phongtot.vn/chung-cu-can-ho/cho-thue-can-ho-gemek-2-ngu-do-co-ban-gia-5-trieuthang">Cho thu&ecirc; căn hộ Gemek 2 ngủ đồ cơ bản gi&aacute; 5 triệu/th&aacute;ng</a></h2>
+            </div>
+            <div class="extra">
+                <div class="pull-left">
+                    <a href="#"><span class="fa fa-map-marker"></span>Ho&agrave;i Đức</a>
+                </div>
+                <div class="pull-right">
+                    <a href=""><span class="fa fa-info"></span>80 m<sup>2</sup></a>
+                </div>
+                <div class="type">
+                    <a href=""><span class="fa fa-home"></span>Chung cư, căn hộ</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="overlay">
+            <a href="#" title="">
+                <img src="img/play.png">
+            </a>
+        </div> -->
+    </div>
+</div>                                                    <div class="col-sm-6 col-md-4 thumbnail-item">
+    <div class="thumbnail">
+        <a href="http://phongtot.vn/chung-cu-can-ho/cho-thue-chung-cu-mini-dt-35-40m2-day-du-tien-nghi-dieu-hoa-nong-lanh-so-213-pho-xa-dan-1511532440to3o8" title="Cho thu&ecirc; chung cư mini DT 35 - 40m2 đầy đủ tiện nghi điều h&ograve;a n&oacute;ng lạnh số 213 phố X&atilde; Đ&agrave;n">
+            <img src="http://media.phongtot.vn/xc5tx4cj/cho-thue-chung-cu-mini-dt-35-40m2-day-du-tien-nghi-dieu-hoa-nong-lanh-so-213-pho-xa-dan-1511532440to3o8-thumb-bq3da.jpg" alt="" class="cover img-reponsive">
+        </a>
+        <div class="room-item-price">
+            <a href="">7,000,000 Đ/tháng</a>
+        </div>
+        <div class="caption">
+            <div class="title">
+                <h2><a href="http://phongtot.vn/chung-cu-can-ho/cho-thue-chung-cu-mini-dt-35-40m2-day-du-tien-nghi-dieu-hoa-nong-lanh-so-213-pho-xa-dan-1511532440to3o8">Cho thu&ecirc; chung cư mini DT 35 - 40m2 đầy đủ tiện nghi điều h&ograve;a n&oacute;ng lạnh số 213 phố X&atilde; Đ&agrave;n</a></h2>
+            </div>
+            <div class="extra">
+                <div class="pull-left">
+                    <a href="#"><span class="fa fa-map-marker"></span>Đống Đa</a>
+                </div>
+                <div class="pull-right">
+                    <a href=""><span class="fa fa-info"></span>50 m<sup>2</sup></a>
+                </div>
+                <div class="type">
+                    <a href=""><span class="fa fa-home"></span>Chung cư, căn hộ</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="overlay">
+            <a href="#" title="">
+                <img src="img/play.png">
+            </a>
+        </div> -->
+    </div>
+</div>                                                    <div class="col-sm-6 col-md-4 thumbnail-item">
+    <div class="thumbnail">
+        <a href="http://phongtot.vn/chung-cu-can-ho/cho-thue-chung-cu-mini-1-phong-ngu-1-pk-dt-40m2-dieu-hoa-san-go-mat-pho-dong-cac-o-cho-dua" title="CHO THU&Ecirc; CHUNG CƯ MINI 1 PH&Ograve;NG NGỦ, 1 PK, DT 40M2 ĐIỀU H&Ograve;A S&Agrave;N GỖ MẶT PHỐ Đ&Ocirc;NG C&Aacute;C, &Ocirc; CHỢ DỪA">
+            <img src="http://media.phongtot.vn/xc5tx4cj/cho-thue-chung-cu-mini-1-phong-ngu-1-pk-dt-40m2-dieu-hoa-san-go-mat-pho-dong-cac-o-cho-dua-thumb-dqcug.jpg" alt="" class="cover img-reponsive">
+        </a>
+        <div class="room-item-price">
+            <a href="">7,000,000 Đ/tháng</a>
+        </div>
+        <div class="caption">
+            <div class="title">
+                <h2><a href="http://phongtot.vn/chung-cu-can-ho/cho-thue-chung-cu-mini-1-phong-ngu-1-pk-dt-40m2-dieu-hoa-san-go-mat-pho-dong-cac-o-cho-dua">CHO THU&Ecirc; CHUNG CƯ MINI 1 PH&Ograve;NG NGỦ, 1 PK, DT 40M2 ĐIỀU H&Ograve;A S&Agrave;N GỖ MẶT PHỐ Đ&Ocirc;NG C&Aacute;C, &Ocirc; CHỢ DỪA</a></h2>
+            </div>
+            <div class="extra">
+                <div class="pull-left">
+                    <a href="#"><span class="fa fa-map-marker"></span>Đống Đa</a>
+                </div>
+                <div class="pull-right">
+                    <a href=""><span class="fa fa-info"></span>50 m<sup>2</sup></a>
+                </div>
+                <div class="type">
+                    <a href=""><span class="fa fa-home"></span>Chung cư, căn hộ</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="overlay">
+            <a href="#" title="">
+                <img src="img/play.png">
+            </a>
+        </div> -->
+    </div>
+</div>                                                    <div class="col-sm-6 col-md-4 thumbnail-item">
+    <div class="thumbnail">
+        <a href="http://phongtot.vn/chung-cu-can-ho/chinh-chu-cho-thue-can-ho-tang-5-toa-nha-ct1-trung-van-nam-tu-liem-ha-noi" title="Ch&iacute;nh chủ cho thu&ecirc; căn hộ tầng 5 t&ograve;a nh&agrave; CT1 Trung Văn Nam Từ Li&ecirc;m H&agrave; Nội">
+            <img src="http://media.phongtot.vn/xc5tx4cj/chinh-chu-cho-thue-can-ho-tang-5-toa-nha-ct1-trung-van-nam-tu-liem-ha-noi-thumb-yeiar.jpg" alt="" class="cover img-reponsive">
+        </a>
+        <div class="room-item-price">
+            <a href="">6,000,000 Đ/tháng</a>
+        </div>
+        <div class="caption">
+            <div class="title">
+                <h2><a href="http://phongtot.vn/chung-cu-can-ho/chinh-chu-cho-thue-can-ho-tang-5-toa-nha-ct1-trung-van-nam-tu-liem-ha-noi">Ch&iacute;nh chủ cho thu&ecirc; căn hộ tầng 5 t&ograve;a nh&agrave; CT1 Trung Văn Nam Từ Li&ecirc;m H&agrave; Nội</a></h2>
+            </div>
+            <div class="extra">
+                <div class="pull-left">
+                    <a href="#"><span class="fa fa-map-marker"></span>Từ Li&ecirc;m</a>
+                </div>
+                <div class="pull-right">
+                    <a href=""><span class="fa fa-info"></span>73 m<sup>2</sup></a>
+                </div>
+                <div class="type">
+                    <a href=""><span class="fa fa-home"></span>Chung cư, căn hộ</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="overlay">
+            <a href="#" title="">
+                <img src="img/play.png">
+            </a>
+        </div> -->
+    </div>
+</div>                                                    <div class="col-sm-6 col-md-4 thumbnail-item">
+    <div class="thumbnail">
+        <a href="http://phongtot.vn/chung-cu-can-ho/cho-thue-chung-cu-mini-day-du-tien-dieu-hoa-giuong-tu-dt45m2-1-pngukhach-pho-xa-dan" title="CHO THU&Ecirc; CHUNG CƯ MINI ĐẦY ĐỦ TIỆN ĐIỀU H&Ograve;A GIƯỜNG TỦ DT45M2 1 P.NGỦ,KH&Aacute;CH PHỐ X&Atilde; Đ&Agrave;N">
+            <img src="http://media.phongtot.vn/xc5tx4cj/cho-thue-chung-cu-mini-day-du-tien-dieu-hoa-giuong-tu-dt45m2-1-pngukhach-pho-xa-dan-thumb-3og8a.jpg" alt="" class="cover img-reponsive">
+        </a>
+        <div class="room-item-price">
+            <a href="">6,000,000 Đ/tháng</a>
+        </div>
+        <div class="caption">
+            <div class="title">
+                <h2><a href="http://phongtot.vn/chung-cu-can-ho/cho-thue-chung-cu-mini-day-du-tien-dieu-hoa-giuong-tu-dt45m2-1-pngukhach-pho-xa-dan">CHO THU&Ecirc; CHUNG CƯ MINI ĐẦY ĐỦ TIỆN ĐIỀU H&Ograve;A GIƯỜNG TỦ DT45M2 1 P.NGỦ,KH&Aacute;CH PHỐ X&Atilde; Đ&Agrave;N</a></h2>
+            </div>
+            <div class="extra">
+                <div class="pull-left">
+                    <a href="#"><span class="fa fa-map-marker"></span>Đống Đa</a>
+                </div>
+                <div class="pull-right">
+                    <a href=""><span class="fa fa-info"></span>40 m<sup>2</sup></a>
+                </div>
+                <div class="type">
+                    <a href=""><span class="fa fa-home"></span>Chung cư, căn hộ</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="overlay">
+            <a href="#" title="">
+                <img src="img/play.png">
+            </a>
+        </div> -->
+    </div>
+</div>                                                    <div class="col-sm-6 col-md-4 thumbnail-item">
+    <div class="thumbnail">
+        <a href="http://phongtot.vn/chung-cu-can-ho/chinh-chu-cho-thue-phong-chung-cu-mini-day-du-tien-nghi-dt38-45m2-so-96-la-thanh-cho-dua" title="CH&Iacute;NH CHỦ CHO THU&Ecirc; PH&Ograve;NG CHUNG CƯ MINI ĐẦY ĐỦ TIỆN NGHI. DT38-45M2, SỐ 96 LA THANH-CHỢ DỪA">
+            <img src="http://media.phongtot.vn/xc5tx4cj/chinh-chu-cho-thue-phong-chung-cu-mini-day-du-tien-nghi-dt38-45m2-so-96-la-thanh-cho-dua-thumb-lrkum.jpg" alt="" class="cover img-reponsive">
+        </a>
+        <div class="room-item-price">
+            <a href="">5,500,000 Đ/tháng</a>
+        </div>
+        <div class="caption">
+            <div class="title">
+                <h2><a href="http://phongtot.vn/chung-cu-can-ho/chinh-chu-cho-thue-phong-chung-cu-mini-day-du-tien-nghi-dt38-45m2-so-96-la-thanh-cho-dua">CH&Iacute;NH CHỦ CHO THU&Ecirc; PH&Ograve;NG CHUNG CƯ MINI ĐẦY ĐỦ TIỆN NGHI. DT38-45M2, SỐ 96 LA THANH-CHỢ DỪA</a></h2>
+            </div>
+            <div class="extra">
+                <div class="pull-left">
+                    <a href="#"><span class="fa fa-map-marker"></span>Đống Đa</a>
+                </div>
+                <div class="pull-right">
+                    <a href=""><span class="fa fa-info"></span>40 m<sup>2</sup></a>
+                </div>
+                <div class="type">
+                    <a href=""><span class="fa fa-home"></span>Chung cư, căn hộ</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="overlay">
+            <a href="#" title="">
+                <img src="img/play.png">
+            </a>
+        </div> -->
+    </div>
+</div>                                                    <div class="col-sm-6 col-md-4 thumbnail-item">
+    <div class="thumbnail">
+        <a href="http://phongtot.vn/chung-cu-can-ho/chinh-chu-cho-thue-chung-cu-mini-du-do-dt45-60m2-mat-pho-93-95-pho-dong-cac-o-cho-dua-1511514828gonk6" title="CH&Iacute;NH CHỦ CHO THU&Ecirc; CHUNG CƯ MINI ĐỦ ĐỒ DT45-60M2 MẶT PHỐ 93-95 PHỐ Đ&Ocirc;NG C&Aacute;C-&Ocirc; CHỢ DỪA.">
+            <img src="http://media.phongtot.vn/xc5tx4cj/chinh-chu-cho-thue-chung-cu-mini-du-do-dt45-60m2-mat-pho-93-95-pho-dong-cac-o-cho-dua-1511514828gonk6-thumb-310wp.jpg" alt="" class="cover img-reponsive">
+        </a>
+        <div class="room-item-price">
+            <a href="">7,000,000 Đ/tháng</a>
+        </div>
+        <div class="caption">
+            <div class="title">
+                <h2><a href="http://phongtot.vn/chung-cu-can-ho/chinh-chu-cho-thue-chung-cu-mini-du-do-dt45-60m2-mat-pho-93-95-pho-dong-cac-o-cho-dua-1511514828gonk6">CH&Iacute;NH CHỦ CHO THU&Ecirc; CHUNG CƯ MINI ĐỦ ĐỒ DT45-60M2 MẶT PHỐ 93-95 PHỐ Đ&Ocirc;NG C&Aacute;C-&Ocirc; CHỢ DỪA.</a></h2>
+            </div>
+            <div class="extra">
+                <div class="pull-left">
+                    <a href="#"><span class="fa fa-map-marker"></span>Đống Đa</a>
+                </div>
+                <div class="pull-right">
+                    <a href=""><span class="fa fa-info"></span>45 m<sup>2</sup></a>
+                </div>
+                <div class="type">
+                    <a href=""><span class="fa fa-home"></span>Chung cư, căn hộ</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="overlay">
+            <a href="#" title="">
+                <img src="img/play.png">
+            </a>
+        </div> -->
+    </div>
+</div>                                                    <div class="col-sm-6 col-md-4 thumbnail-item">
+    <div class="thumbnail">
+        <a href="http://phongtot.vn/chung-cu-can-ho/can-ho-cho-thue-cmt8-quan-10-tphcm-full-noi-that-day-du-tien-nghi-15114508260iyq9" title="Căn hộ cho thu&ecirc; CMT8, Quận 10, TP.HCM, full nội thất, đầy đủ tiện nghi">
+            <img src="http://media.phongtot.vn/xc5tx4cj/can-ho-cho-thue-cmt8-quan-10-tphcm-full-noi-that-day-du-tien-nghi-15114508260iyq9-thumb-ukcg2.jpg" alt="" class="cover img-reponsive">
+        </a>
+        <div class="room-item-price">
+            <a href="">7,000,000 Đ/tháng</a>
+        </div>
+        <div class="caption">
+            <div class="title">
+                <h2><a href="http://phongtot.vn/chung-cu-can-ho/can-ho-cho-thue-cmt8-quan-10-tphcm-full-noi-that-day-du-tien-nghi-15114508260iyq9">Căn hộ cho thu&ecirc; CMT8, Quận 10, TP.HCM, full nội thất, đầy đủ tiện nghi</a></h2>
+            </div>
+            <div class="extra">
+                <div class="pull-left">
+                    <a href="#"><span class="fa fa-map-marker"></span>10</a>
+                </div>
+                <div class="pull-right">
+                    <a href=""><span class="fa fa-info"></span>30 m<sup>2</sup></a>
+                </div>
+                <div class="type">
+                    <a href=""><span class="fa fa-home"></span>Chung cư, căn hộ</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="overlay">
+            <a href="#" title="">
+                <img src="img/play.png">
+            </a>
+        </div> -->
+    </div>
+</div>                                                    <div class="col-sm-6 col-md-4 thumbnail-item">
+    <div class="thumbnail">
+        <a href="http://phongtot.vn/chung-cu-can-ho/cho-thue-can-ho-54m-full-do-tai-pcc1-ha-dong-gia-3-trieu" title="Cho thu&ecirc; Căn hộ 54m Full đồ tại PCC1 H&agrave; Đ&ocirc;ng Gi&aacute; 3 triệu">
+            <img src="http://media.phongtot.vn/xc5tx4cj/cho-thue-can-ho-54m-full-do-tai-pcc1-ha-dong-gia-3-trieu-thumb-resized-139gb.jpg" alt="" class="cover img-reponsive">
+        </a>
+        <div class="room-item-price">
+            <a href="">3,000,000 Đ/tháng</a>
+        </div>
+        <div class="caption">
+            <div class="title">
+                <h2><a href="http://phongtot.vn/chung-cu-can-ho/cho-thue-can-ho-54m-full-do-tai-pcc1-ha-dong-gia-3-trieu">Cho thu&ecirc; Căn hộ 54m Full đồ tại PCC1 H&agrave; Đ&ocirc;ng Gi&aacute; 3 triệu</a></h2>
+            </div>
+            <div class="extra">
+                <div class="pull-left">
+                    <a href="#"><span class="fa fa-map-marker"></span>H&agrave; Đ&ocirc;ng</a>
+                </div>
+                <div class="pull-right">
+                    <a href=""><span class="fa fa-info"></span>54 m<sup>2</sup></a>
+                </div>
+                <div class="type">
+                    <a href=""><span class="fa fa-home"></span>Chung cư, căn hộ</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="overlay">
+            <a href="#" title="">
+                <img src="img/play.png">
+            </a>
+        </div> -->
+    </div>
+</div>                                            </div>
+                </div>
+            </div>
+                                </div>
+    </div>
+</div>
+<div class="home-article">
+    <div class="row">
+        <div class="col-md-12 home-article-label">
+            <div class="pull-left">
+                <a href="http://phongtot.vn/bai-viet"><h3><span>bài viết</span> liên quan</h3></a>
+            </div>
+            <div class="pull-right">
+                <a href=""></a><h3><a href="http://phongtot.vn/bai-viet">Xem thêm <i class="fa fa-angle-right"></i></a>
+            </h3></div>
+            <div class="clearfix"></div>
+            <hr>
+        </div>
+        <div class="col-md-7 left">
+                                        <div class="thumbnail thumb-big">
+                <a href="http://phongtot.vn/bai-viet/ngoi-nha-46m%C2%B2-tuyet-dep-co-chi-phi-hoan-thien-480-trieu-dong-chang-trai-8x-xay-tang-vo">
+                    <img class="img-responsive" src="http://media.phongtot.vn/xc5tx4cj/ngoi-nha-46m&sup2;-tuyet-dep-co-chi-phi-hoan-thien-480-trieu-dong-chang-trai-8x-xay-tang-vo_cover-573eddf84424b.jpg" alt="ngoi-nha-46m&sup2;-tuyet-dep-co-chi-phi-hoan-thien-480-trieu-dong-chang-trai-8x-xay-tang-vo">
+                    <h2 class="title">Ng&ocirc;i nh&agrave; 46m&sup2; tuyệt đẹp c&oacute; chi ph&iacute; ho&agrave;n thiện 480 triệu đồng ch&agrave;ng trai 8x x&acirc;y tặng vợ</h2>
+                </a>
+                <div class="des">Ng&ocirc;i nh&agrave; của Nguyễn Ho&agrave;ng Hiệp tặng cho vợ sắp cưới kh&ocirc;ng chỉ đẹp như nh&agrave; T&acirc;y m&agrave; tổng chi ph&iacute; x&acirc;y dựng, thiết kế, trang tr&iacute; chỉ vỏn vẹn ở con số 480 triệu đồng.</div>
+            </div>
+                                            <div class="col-md-4 thumbnail thumb-small">
+                <a href="http://phongtot.vn/bai-viet/y-tuong-kinh-doanh-nha-tro-ngoi-khong-moi-thang-kiem-tram-trieu">
+                    <img class="img-reponsive" src="http://media.phongtot.vn/xc5tx4cj/y-tuong-kinh-doanh-nha-tro-ngoi-khong-moi-thang-kiem-tram-trieu_cover-573dcbc3ac6e2.jpg" alt="y-tuong-kinh-doanh-nha-tro-ngoi-khong-moi-thang-kiem-tram-trieu">
+                    <h2 class="title" href="http://phongtot.vn/bai-viet/y-tuong-kinh-doanh-nha-tro-ngoi-khong-moi-thang-kiem-tram-trieu">&Yacute; tưởng kinh doanh nh&agrave; trọ, ngồi kh&ocirc;ng mỗi th&aacute;ng kiếm trăm triệu?</h2>
+                </a>
+            </div>
+                                            <div class="col-md-4 thumbnail thumb-small">
+                <a href="http://phongtot.vn/bai-viet/nhung-dieu-can-biet-khi-tim-phong-tro">
+                    <img class="img-reponsive" src="http://media.phongtot.vn/xc5tx4cj/nhung-dieu-can-biet-khi-tim-phong-tro_cover-5714ad734268d.jpg" alt="nhung-dieu-can-biet-khi-tim-phong-tro">
+                    <h2 class="title" href="http://phongtot.vn/bai-viet/nhung-dieu-can-biet-khi-tim-phong-tro">Những điều cần biết khi t&igrave;m ph&ograve;ng trọ</h2>
+                </a>
+            </div>
+                                            <div class="col-md-4 thumbnail thumb-small">
+                <a href="http://phongtot.vn/bai-viet/thiet-ke-can-ho-%E2%80%AA%E2%80%AC173m2-cuc-dep-voi-chi-phi-chi-17-trieu-dong">
+                    <img class="img-reponsive" src="http://media.phongtot.vn/xc5tx4cj/thiet-ke-can-ho-‪‬173m2-cuc-dep-voi-chi-phi-chi-17-trieu-dong_cover-57018c103e17a.jpg" alt="thiet-ke-can-ho-‪‬173m2-cuc-dep-voi-chi-phi-chi-17-trieu-dong">
+                    <h2 class="title" href="http://phongtot.vn/bai-viet/thiet-ke-can-ho-%E2%80%AA%E2%80%AC173m2-cuc-dep-voi-chi-phi-chi-17-trieu-dong">Thiết kế căn hộ ‪‬173m2 cực đẹp với chi ph&iacute; chỉ 17 triệu đồng</h2>
+                </a>
+            </div>
+                            </div>
+        <div class="col-md-5 right">
+                            <div class="row item">
+                <a href="http://phongtot.vn/bai-viet/pham-huong-mac-gian-di-giao-luu-cung-sinh-vien">
+                    <div class="col-md-4 no-padding-vertical">
+                        <img class="img-responsive" src="http://media.phongtot.vn/xc5tx4cj/pham-huong-mac-gian-di-giao-luu-cung-sinh-vien_cover-57018a97e544c.jpg" alt="pham-huong-mac-gian-di-giao-luu-cung-sinh-vien">
+                    </div>
+                    <div class="col-md-8 no-padding-left">
+                        <h2 class="title" href="http://phongtot.vn/bai-viet/pham-huong-mac-gian-di-giao-luu-cung-sinh-vien">Phạm Hương mặc giản dị giao lưu c&ugrave;ng sinh vi&ecirc;n</h2>
+                    </div>
+                </a>
+            </div>
+                    <div class="row item">
+                <a href="http://phongtot.vn/bai-viet/vi-sao-chon-nganh-hot-van-that-nghiep">
+                    <div class="col-md-4 no-padding-vertical">
+                        <img class="img-responsive" src="http://media.phongtot.vn/xc5tx4cj/vi-sao-chon-nganh-hot-van-that-nghiep_cover-57017e8c0162e.jpg" alt="vi-sao-chon-nganh-hot-van-that-nghiep">
+                    </div>
+                    <div class="col-md-8 no-padding-left">
+                        <h2 class="title" href="http://phongtot.vn/bai-viet/vi-sao-chon-nganh-hot-van-that-nghiep">V&igrave; sao chọn ng&agrave;nh &#039;hot&#039; vẫn thất nghiệp?</h2>
+                    </div>
+                </a>
+            </div>
+                    <div class="row item">
+                <a href="http://phongtot.vn/bai-viet/sinh-vien-my-chon-nganh-hoc-the-nao">
+                    <div class="col-md-4 no-padding-vertical">
+                        <img class="img-responsive" src="http://media.phongtot.vn/xc5tx4cj/sinh-vien-my-chon-nganh-hoc-the-nao_cover-57017d118c141.jpg" alt="sinh-vien-my-chon-nganh-hoc-the-nao">
+                    </div>
+                    <div class="col-md-8 no-padding-left">
+                        <h2 class="title" href="http://phongtot.vn/bai-viet/sinh-vien-my-chon-nganh-hoc-the-nao">Sinh vi&ecirc;n Mỹ chọn ng&agrave;nh học thế n&agrave;o?</h2>
+                    </div>
+                </a>
+            </div>
+                    <div class="row item">
+                <a href="http://phongtot.vn/bai-viet/nha-bao-bi-danh-sinh-vien-bao-chi-co-lung-lay">
+                    <div class="col-md-4 no-padding-vertical">
+                        <img class="img-responsive" src="http://media.phongtot.vn/xc5tx4cj/nha-bao-bi-danh-sinh-vien-bao-chi-co-lung-lay_cover-57017a46119c8.jpg" alt="nha-bao-bi-danh-sinh-vien-bao-chi-co-lung-lay">
+                    </div>
+                    <div class="col-md-8 no-padding-left">
+                        <h2 class="title" href="http://phongtot.vn/bai-viet/nha-bao-bi-danh-sinh-vien-bao-chi-co-lung-lay">Nh&agrave; b&aacute;o bị đ&aacute;nh, sinh vi&ecirc;n b&aacute;o ch&iacute; c&oacute; lung lay?</h2>
+                    </div>
+                </a>
+            </div>
+                    <div class="row item">
+                <a href="http://phongtot.vn/bai-viet/hon-100-sinh-vien-bi-dung-hoc-vi-cham-dong-hoc-phi">
+                    <div class="col-md-4 no-padding-vertical">
+                        <img class="img-responsive" src="http://media.phongtot.vn/xc5tx4cj/hon-100-sinh-vien-bi-dung-hoc-vi-cham-dong-hoc-phi_cover-570178b56d545.jpg" alt="hon-100-sinh-vien-bi-dung-hoc-vi-cham-dong-hoc-phi">
+                    </div>
+                    <div class="col-md-8 no-padding-left">
+                        <h2 class="title" href="http://phongtot.vn/bai-viet/hon-100-sinh-vien-bi-dung-hoc-vi-cham-dong-hoc-phi">Hơn 100 sinh vi&ecirc;n bị dừng học v&igrave; chậm đ&oacute;ng học ph&iacute;</h2>
+                    </div>
+                </a>
+            </div>
+                    <div class="row item">
+                <a href="http://phongtot.vn/bai-viet/sinh-vien-hao-hung-tham-gia-ngay-hoi-dinh-huong-nghe-nghiep">
+                    <div class="col-md-4 no-padding-vertical">
+                        <img class="img-responsive" src="http://media.phongtot.vn/xc5tx4cj/sinh-vien-hao-hung-tham-gia-ngay-hoi-dinh-huong-nghe-nghiep_cover-56e41d9cd7bcd.png" alt="sinh-vien-hao-hung-tham-gia-ngay-hoi-dinh-huong-nghe-nghiep">
+                    </div>
+                    <div class="col-md-8 no-padding-left">
+                        <h2 class="title" href="http://phongtot.vn/bai-viet/sinh-vien-hao-hung-tham-gia-ngay-hoi-dinh-huong-nghe-nghiep">Sinh vi&ecirc;n h&agrave;o hứng tham gia ng&agrave;y hội Định hướng nghề nghiệp</h2>
+                    </div>
+                </a>
+            </div>
+                        </div>
+    </div>
+</div>                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 sidebar">
+                                        <div class="row">
+    <div class="col-sm-6 col-md-12 sidebar-ads">
+        <img class="img-responsive" src="http://ngoaingu.net/themes/client/img/ads1.png" alt="">
+    </div>
+</div>                    <div class="row">
+    <div class="col-sm-6 col-md-12 sidebar-social">
+        <div class="fb-page" data-href="https://www.facebook.com/Phongtotvn-Thu%C3%AA-V%C3%A0-Cho-Thu%C3%AA-Ph%C3%B2ng-Ch%C3%ADnh-Ch%E1%BB%A7-726759860760692/" data-width="275" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/Phongtotvn-Thu%C3%AA-V%C3%A0-Cho-Thu%C3%AA-Ph%C3%B2ng-Ch%C3%ADnh-Ch%E1%BB%A7-726759860760692/"><a href="https://www.facebook.com/Phongtotvn-Thu%C3%AA-V%C3%A0-Cho-Thu%C3%AA-Ph%C3%B2ng-Ch%C3%ADnh-Ch%E1%BB%A7-726759860760692/">Phongtot.vn - Thuê Và Cho Thuê Phòng Chính Chủ</a></blockquote></div></div>
+    </div>
+</div>                    <div class="row">
+    <div style="margin-bottom: 30px;" class="col-sm-6 col-md-12 sidebar-ads">
+        <img class="img-responsive" src="http://media.phongtot.vn/xc5tx4cj/ads-3-min.png" alt="">
+    </div>
+    <div class="col-sm-6 col-md-12 sidebar-ads">
+        <img class="img-responsive" src="http://media.phongtot.vn/xc5tx4cj/ads-4-min.png" alt="">
+    </div>
+</div>                    <div class="clearfix"></div>
+                                    </div>
+                        </div>
+        </div>
+        <!-- Start footer -->
+        <div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 footer-top">
+                <!-- <div class="row">
+                    <div class="col-xs-6 col-sm-3 col-md-2">
+                        <h3>Video</h3>
+                        <ul>
+                            <li><h2><a href="http://ngoaingu.net/video/motivational" title="Motivational">Motivational</a></h2></li>
+                            <li><h2><a href="http://ngoaingu.net/video/ted" title="TED">TED</a></h2></li>
+                            <li><h2><a href="http://ngoaingu.net/video/trailers-phim" title="Trailers Phim">Trailers Phim</a></h2></li>
+                            <li><h2><a href="http://ngoaingu.net/video/hoc-tieng-anh-qua-bai-hat" title="Video nhạc">Video nhạc</a></h2></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 col-md-2">
+                        <h3>Quiz</h3>
+                        <ul>
+                            <li><h2><a href="http://ngoaingu.net/video/motivational" title="Motivational">Motivational</a></h2></li>
+                            <li><h2><a href="http://ngoaingu.net/video/ted" title="TED">TED</a></h2></li>
+                            <li><h2><a href="http://ngoaingu.net/video/trailers-phim" title="Trailers Phim">Trailers Phim</a></h2></li>
+                            <li><h2><a href="http://ngoaingu.net/video/hoc-tieng-anh-qua-bai-hat" title="Video nhạc">Video nhạc</a></h2></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 col-md-2">
+                        <h3>Phim</h3>
+                        <ul>
+                            <li><h2><a href="http://ngoaingu.net/video/motivational" title="Motivational">Motivational</a></h2></li>
+                            <li><h2><a href="http://ngoaingu.net/video/ted" title="TED">TED</a></h2></li>
+                            <li><h2><a href="http://ngoaingu.net/video/trailers-phim" title="Trailers Phim">Trailers Phim</a></h2></li>
+                            <li><h2><a href="http://ngoaingu.net/video/hoc-tieng-anh-qua-bai-hat" title="Video nhạc">Video nhạc</a></h2></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 col-md-2">
+                        <h3>Tiếng anh trẻ em</h3>
+                        <ul>
+                            <li><h2><a href="http://ngoaingu.net/video/motivational" title="Motivational">Motivational</a></h2></li>
+                            <li><h2><a href="http://ngoaingu.net/video/ted" title="TED">TED</a></h2></li>
+                            <li><h2><a href="http://ngoaingu.net/video/trailers-phim" title="Trailers Phim">Trailers Phim</a></h2></li>
+                            <li><h2><a href="http://ngoaingu.net/video/hoc-tieng-anh-qua-bai-hat" title="Video nhạc">Video nhạc</a></h2></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 col-md-2">
+                        <h3>Chuyên nghành</h3>
+                        <ul>
+                            <li><h2><a href="http://ngoaingu.net/video/motivational" title="Motivational">Motivational</a></h2></li>
+                            <li><h2><a href="http://ngoaingu.net/video/ted" title="TED">TED</a></h2></li>
+                            <li><h2><a href="http://ngoaingu.net/video/trailers-phim" title="Trailers Phim">Trailers Phim</a></h2></li>
+                            <li><h2><a href="http://ngoaingu.net/video/hoc-tieng-anh-qua-bai-hat" title="Video nhạc">Video nhạc</a></h2></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 col-md-2">
+                        <h3>Bài viết</h3>
+                        <ul>
+                            <li><h2><a href="http://ngoaingu.net/video/motivational" title="Motivational">Motivational</a></h2></li>
+                            <li><h2><a href="http://ngoaingu.net/video/ted" title="TED">TED</a></h2></li>
+                            <li><h2><a href="http://ngoaingu.net/video/trailers-phim" title="Trailers Phim">Trailers Phim</a></h2></li>
+                            <li><h2><a href="http://ngoaingu.net/video/hoc-tieng-anh-qua-bai-hat" title="Video nhạc">Video nhạc</a></h2></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 footer-hr">
+                        <hr/>
+                    </div>
+                </div> -->
+                <div class="row block-footer-2">
+                    <div class="col-xs-6 col-sm-6 col-md-2">
+                        <h3>Thông tin liên hệ</h3>
+                        <p>Tel : 098.8888.182<br/>
+                        <span>Email : support@phongtot.vn</span></p>
+                        <!-- <img class="img-responsive" src="img/footer-logo.png" alt=""> -->
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-2">
+                        <h3>Hỗ trợ</h3>
+                        <ul>
+                            <li><h2><a href="" title="Motivational">Giới thiệu</a></h2></li>
+                            <li><h2><a href="" title="TED">Điều khoản sử dụng</a></h2></li>
+                            <li><h2><a href="" title="Trailers Phim">Quảng cáo</a></h2></li>
+                            <li><h2><a href="" title="Video nhạc">Tính năng ưu điểm</a></h2></li>
+                        </ul>
+                        <ul>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-4 footer-about">
+                        <h3>Về chúng tôi</h3>
+                        <p>Trang web đăng tin chia sẻ miễn phí thông tin về phòng trọ, nhà riêng, văn phòng nhằm giúp người thuê phòng và người cho thuê phòng tương tác với nhau không qua trung gian môi giới.</p>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-4 footer-tag">
+                        <h3>Top từ khóa</h3>
+                        <p>
+                        <a href="http://phongtot.vn/phong-tro-nha-tro">Tìm phòng trọ</a>,
+                        <a href="http://phongtot.vn/phong-tro-nha-tro">Tìm nhà trọ</a>,
+                        <a href="http://phongtot.vn/phong-tro-nha-tro">Cho thuê nhà trọ</a>,
+                        <a href="http://phongtot.vn/phong-tro-nha-tro">Cho thuê phòng trọ</a>,
+                        <a href="http://phongtot.vn/nha-nguyen-can">Cho thuê nhà nguyên căn</a>,
+                        <a href="http://phongtot.vn/nha-nguyen-can">Thuê nhà nguyên căn</a>,
+                        <a href="http://phongtot.vn/nha-nguyen-can">Nhà cho thuê</a>,
+                        <a href="http://phongtot.vn/chung-cu-can-ho">Cho thuê chung cư mini</a>,
+                        <a href="http://phongtot.vn/o-ghep">Tìm người ở ghép</a>,
+                        <a href="http://licham.com" target="_blank" title="Lịch âm">Lịch âm</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="row block-footer-bottom">
+                    <div class="col-md-12">
+                        <div class="pull-left">
+                            <a href="">Site map</a> /
+                            <a href="">Tìm kiếm nâng cao</a> /
+                            <a href="">Liên hệ</a>
+                            <br>
+                            <span>Website đang hoạt động thử nghiệm, chờ xin giấy phép hoạt động của Bộ thông tin và truyền thông.</span><br>
+                            <span>© 2016 Static Team. All rights reserved.</span>
+                        </div>
+                        <div class="pull-right">
+                            <i class="fa fa-apple"></i>
+                            <i class="fa fa-windows"></i>
+                            <i class="fa fa-google-plus"></i>
+                            <i class="fa fa-facebook"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>        <div id="systemAlert">
+                    </div>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                setTimeout(function(){
+                    $('#systemAlert').fadeOut();
+                }, 10000);
+            })
+        </script>
+        <div class="modal fade" id="modal_auth" tabindex="-1" role="dialog" aria-labelledby="login_modal_label" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="row-fluid">
+                <div class="col-md-12">
+                    <div class="modal_auth_wrap">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <ul class="nav nav-tabs no-margin">
+                            <li id="li_login" class="active"><a href="#tab_auth_login" data-toggle="tab">ĐĂNG NHẬP</a></li>
+                            <li id="li_register"><a href="#tab_auth_register" data-toggle="tab">ĐĂNG KÝ</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane fade in active" id="tab_auth_login">
+                                <form class="form-horizontal frm-login-ajax1 frm-user-ajax" id="frm-login-ajax1" role="form" method="POST" action="http://phongtot.vn/dang-nhap">
+                                    <div class="hide alert alert-danger"></div>
+                                    <input type="hidden" name="_token" value="yeXcvpnornkHbghDE6dzTLUcLb7IDIDwhinm4rFV">
+                                    <input type="hidden" name="current_url" value="http://phongtot.vn">
+                                    <div class="form-group">
+                                        <label for="email" class="col-sm-3 col-md-3 control-label">Email</label>
+                                        <div class="col-sm-8 col-md-8">
+                                            <input type="email" class="form-control" name="email" id="email" placeholder="Địa chỉ email ..." value="">
+                                            <span class="help-block"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password" class="col-sm-3 col-md-3 control-label">Mật khẩu</label>
+                                        <div class="col-sm-8 col-md-8">
+                                            <input type="password" name="password" class="form-control" id="password" placeholder="Mật khẩu ...">
+                                            <span class="help-block"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-3 col-md-3 control-label"></label>
+                                        <div class="col-sm-8 col-md-8">
+                                            <div class="pull-left help-block"><input type="checkbox" name="remember"> Ghi nhớ đăng nhập</div>
+                                            <div class="pull-right"><button type="submit" class="btn btn-auth-submit">Đăng nhập</button></div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-md-12 text-center">
+                                            <a href="http://phongtot.vn/social/facebook" class="btn btn-md btn-social btn-facebook"> <i class="fa fa-facebook"></i> Đăng nhập bằng Facebook </a>
+                                            <a href="http://phongtot.vn/social/google" class="btn btn-md btn-social btn-google-plus"> <i class="fa fa-google-plus"></i> Đăng nhập bằng Google </a>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="text-center text-center-auth">
+                                            <p><a class="btn btn-link" href="http://phongtot.vn/password/email">Khôi phục mật khẩu</a> để tìm lại mật khẩu</p>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                                                        <div class="tab-pane fade" id="tab_auth_register">
+                                <form class="form-horizontal frm-user-ajax" id="frm-register-ajax" role="form" method="POST" action="http://phongtot.vn/dang-ky">
+                                    <div class="hide alert alert-danger"></div>
+                                    <input type="hidden" name="_token" value="yeXcvpnornkHbghDE6dzTLUcLb7IDIDwhinm4rFV">
+                                    <input type="hidden" name="current_url" value="http://phongtot.vn">
+                                    <div class="form-group">
+                                        <label for="txt_fullname" class="col-sm-4 control-label">Tên hiển thị</label>
+                                        <div class="col-sm-6">
+                                            <input type="text" name="name" class="form-control" id="name" placeholder="Tên hiển thị ..." value="">
+                                            <span class="help-block"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txt_email" class="col-sm-4 control-label">Email</label>
+                                        <div class="col-sm-6">
+                                            <input type="email" name="email" class="form-control" id="email" placeholder="Email ..." value="">
+                                            <span class="help-block"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txt_password" class="col-sm-4 control-label">Mật khẩu</label>
+                                        <div class="col-sm-6">
+                                            <input type="password" name="password" class="form-control" id="password" placeholder="Mật khẩu ...">
+                                            <span class="help-block"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txt_password2" class="col-sm-4 control-label">Xác nhận mật khẩu</label>
+                                        <div class="col-sm-6">
+                                            <input type="password" name="repassword" class="form-control" id="password_confirmation" placeholder="Xác nhận mật khẩu ...">
+                                            <span class="help-block"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txt_confirm" class="col-sm-4 control-label">Xác nhận</label>
+                                        <div class="col-sm-6">
+                                            <input type="text" name="captcha" class="form-control" id="captcha" placeholder="Mã xác nhận ..." value="">
+                                            <span class="help-block"></span>
+                                            <span class="help-block"><small>Gồm 5 ký tự phân biệt chữ Hoa và chữ thường. </small></span>
+                                            <div class="col-md-12">
+                                                <img src="http://phongtot.vn/captcha/default?Oo4wBcyo" alt="captcha" class="captcha-img" data-refresh-config="default">
+                                                <span class="pull-right"><a title="Lấy mã xác nhận mới" class="recapcha enable-tooltip" href="javascript:void(0);"><i class="fa fa-refresh fa-2x text-success"></i></a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <script type="text/javascript">
+                                    $('.recapcha').on('click', function () {
+                                        var captcha = $('img.captcha-img');
+                                        var config = captcha.data('refresh-config');
+                                        $.ajax({
+                                            method: 'GET',
+                                            url: '/get_captcha/' + config,
+                                        }).done(function (response) {
+                                            captcha.prop('src', response);
+                                        });
+                                    });
+                                    </script>
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-4 col-sm-8">
+                                            <button type="submit" class="btn btn-auth-submit">Đăng ký tài khoản</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <hr>
+                                <div class="text-center">
+                                    <a href="http://phongtot.vn/social/facebook" class="btn btn-md btn-social btn-facebook"> <i class="fa fa-facebook"></i> Đăng ký bằng Facebook </a>
+                                    <a href="http://phongtot.vn/social/facebook" class="btn btn-md btn-social btn-google-plus"> <i class="fa fa-google-plus"></i> Đăng ký bằng Google </a>
+                                </div>
+                            </div>
+                                                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>                <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+        <script src="http://phongtot.vn/themes/client/js/jquery-gmaps-latlon-picker.js"></script>
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <script>
+             (function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=464576090336755";
+              fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+
+            $(document).ready(function() {
+                var wbbOpt = {
+                buttons: "bold,italic,underline,|,justifyleft,justifycenter,justifyright,|,removeFormat"
+                }
+                $("#editor").wysibb(wbbOpt);
+            });
+        </script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-75912345-1', 'auto');
+            ga('send', 'pageview');
+
+        </script>
+        <script src="http://phongtot.vn/themes/client/js/app.js"></script>
+    </body>
+</html>
